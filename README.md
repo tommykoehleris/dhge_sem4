@@ -50,6 +50,7 @@ Alle Kommilitonen PI 20 sind dazu eingeladen, ihre eigenen Beiträge zu diesem P
 - [SWS - WPM 1 Kryptographie und Softwaresicherheit](./SWS-KUSCHE)
 
 Templatesammlung von SWE ist in einem [extra Repo](https://github.com/importPI20fromDHGE/dhge-pi20-sem4-swe)
+
 ## Markdown-Erweiterungen
 
 Alle Skripte in diesem Repository sind im `markdown`-Format verfasst. Für dieses existieren [viele verschiedene Standards](https://de.wikipedia.org/wiki/Markdown#Weiterentwicklungen,_Variationen_und_Erg%C3%A4nzungen).

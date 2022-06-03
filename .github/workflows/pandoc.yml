@@ -24,6 +24,8 @@ jobs:
           awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/SWS-KUSCHE/README.md > SWS-KUSCHE/README.md &&
           awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/EMB-GUENTHER/README.md > EMB-GUENTHER/README.md
           awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/MPP-PI/README.md > MPP-PI/README.md
+          awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/SWE-KASCHE/appendix/LKF.md > SWE-KASCHE/appendix/LKF.md
+          awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/SWE-KASCHE/appendix/PRUEFUNGSAUFGABEN.md > SWE-KASCHE/appendix/PRUEFUNGSAUFGABEN.md
       - run: |
           mkdir output
       - uses: docker://rstropek/pandoc-latex:latest # generate ABWL-LEDER pdf
@@ -53,6 +55,12 @@ jobs:
       - uses: docker://rstropek/pandoc-latex:latest # generate MPP-PI pdf
         with:
           args: --output=output/MPP-PI.pdf --resource-path=MPP-PI/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose MPP-PI/README.md
+      - uses: docker://rstropek/pandoc-latex:latest # generate SWE-LKF pdf
+        with:
+          args: --output=output/SWE-LKF.pdf --resource-path=SWE-KASCHE/appendix/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose SWE-KASCHE/appendix/LKF.md
+      - uses: docker://rstropek/pandoc-latex:latest # generate MPP-PI pdf
+        with:
+          args: --output=output/SWE-PRUEFUNGSAUFGABEN.pdf --resource-path=SWE-KASCHE/appendix/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose SWE-KASCHE/appendix/PRUEFUNGSAUFGABEN.md
       - uses: actions/upload-artifact@master # upload pdfs as an artifact
         with:
           name: output
@@ -146,5 +154,14 @@ jobs:
           name: PDFs
           body: Automated release
           gzip: false
-          files: output/MPP-PI.pdf
+          files: output/SWE-LKF.pdf
+          allow_override: true
+      - uses: meeDamian/github-release@2.0 # override release to attach another pdf
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          tag: pdf-release
+          name: PDFs
+          body: Automated release
+          gzip: false
+          files: output/SWE-PRUEFUNGSAUFGABEN.pdf
           allow_override: true

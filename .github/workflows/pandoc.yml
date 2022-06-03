@@ -43,7 +43,7 @@ jobs:
       - uses: docker://rstropek/pandoc-latex:latest # generate SWE-KASCHE pdf
         with:
           args: --output=output/SWE-KASCHE.pdf --resource-path=SWE-KASCHE/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose SWE-KASCHE/README.md
-      - uses: docker://rstropek/pandoc-latex:latest # generate SWE-KASCHE pdf
+      - uses: docker://rstropek/pandoc-latex:latest # generate SWE-KUSCHE pdf
         with:
           args: --output=output/SWS-KUSCHE.pdf --resource-path=SWS-KUSCHE/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose SWS-KUSCHE/README.md
       - uses: docker://rstropek/pandoc-latex:latest # generate EMB-GUENTHER pdf
@@ -58,7 +58,7 @@ jobs:
       - uses: docker://rstropek/pandoc-latex:latest # generate SWE-LKF pdf
         with:
           args: --output=output/SWE-LKF.pdf --resource-path=SWE-KASCHE/appendix/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose SWE-KASCHE/appendix/LKF.md
-      - uses: docker://rstropek/pandoc-latex:latest # generate MPP-PI pdf
+      - uses: docker://rstropek/pandoc-latex:latest # generate SWE-PRUEFUNGSAUFGABEN pdf
         with:
           args: --output=output/SWE-PRUEFUNGSAUFGABEN.pdf --resource-path=SWE-KASCHE/appendix/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose SWE-KASCHE/appendix/PRUEFUNGSAUFGABEN.md
       - uses: actions/upload-artifact@master # upload pdfs as an artifact
@@ -82,86 +82,86 @@ jobs:
           name: PDFs
           body: Automated release
           gzip: false
-          files: output/ABWL-LEDER.pdf
+          files: output/ABWL-LEDER.pdf output/DBS-DORENDORF.pdf output/ASM-GUENTHER.pdf output/SWE-KASCHE.pdf output/SWS-KUSCHE.pdf output/PRO-KASCHE.pdf output/EMB-GUENTHER.pdf output/OOP-CASSELT.pdf output/MPP-PI.pdf output/SWE-LKF.pdf output/SWE-PRUEFUNGSAUFGABEN.pdf
           allow_override: true
-      - uses: meeDamian/github-release@2.0 # override release to attach another pdf
-        with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          tag: pdf-release
-          name: PDFs
-          body: Automated release
-          gzip: false
-          files: output/DBS-DORENDORF.pdf
-          allow_override: true
-      - uses: meeDamian/github-release@2.0 # override release to attach another pdf
-        with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          tag: pdf-release
-          name: PDFs
-          body: Automated release
-          gzip: false
-          files: output/ASM-GUENTHER.pdf
-          allow_override: true
-      - uses: meeDamian/github-release@2.0 # override release to attach another pdf
-        with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          tag: pdf-release
-          name: PDFs
-          body: Automated release
-          gzip: false
-          files: output/SWE-KASCHE.pdf
-          allow_override: true
-      - uses: meeDamian/github-release@2.0 # override release to attach another pdf
-        with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          tag: pdf-release
-          name: PDFs
-          body: Automated release
-          gzip: false
-          files: output/SWS-KUSCHE.pdf
-          allow_override: true
-      - uses: meeDamian/github-release@2.0 # override release to attach another pdf
-        with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          tag: pdf-release
-          name: PDFs
-          body: Automated release
-          gzip: false
-          files: output/PRO-KASCHE.pdf
-          allow_override: true
-      - uses: meeDamian/github-release@2.0 # override release to attach another pdf
-        with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          tag: pdf-release
-          name: PDFs
-          body: Automated release
-          gzip: false
-          files: output/EMB-GUENTHER.pdf
-          allow_override: true
-      - uses: meeDamian/github-release@2.0 # override release to attach another pdf
-        with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          tag: pdf-release
-          name: PDFs
-          body: Automated release
-          gzip: false
-          files: output/OOP-CASSELT.pdf
-          allow_override: true
-      - uses: meeDamian/github-release@2.0 # override release to attach another pdf
-        with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          tag: pdf-release
-          name: PDFs
-          body: Automated release
-          gzip: false
-          files: output/SWE-LKF.pdf
-          allow_override: true
-      - uses: meeDamian/github-release@2.0 # override release to attach another pdf
-        with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          tag: pdf-release
-          name: PDFs
-          body: Automated release
-          gzip: false
-          files: output/SWE-PRUEFUNGSAUFGABEN.pdf
-          allow_override: true
+      #- uses: meeDamian/github-release@2.0 # override release to attach another pdf
+      #  with:
+      #    token: ${{ secrets.ACCESS_TOKEN }}
+      #    tag: pdf-release
+      #    name: PDFs
+      #    body: Automated release
+      #    gzip: false
+      #    files: output/DBS-DORENDORF.pdf
+      #    allow_override: true
+      #- uses: meeDamian/github-release@2.0 # override release to attach another pdf
+      #  with:
+      #    token: ${{ secrets.ACCESS_TOKEN }}
+      #    tag: pdf-release
+      #    name: PDFs
+      #    body: Automated release
+      #    gzip: false
+      #    files: output/ASM-GUENTHER.pdf
+      #    allow_override: true
+      #- uses: meeDamian/github-release@2.0 # override release to attach another pdf
+      #  with:
+      #    token: ${{ secrets.ACCESS_TOKEN }}
+      #    tag: pdf-release
+      #    name: PDFs
+      #    body: Automated release
+      #    gzip: false
+      #    files: output/SWE-KASCHE.pdf
+      #    allow_override: true
+      #- uses: meeDamian/github-release@2.0 # override release to attach another pdf
+      #  with:
+      #    token: ${{ secrets.ACCESS_TOKEN }}
+      #    tag: pdf-release
+      #    name: PDFs
+      #    body: Automated release
+      #    gzip: false
+      #    files: output/SWS-KUSCHE.pdf
+      #    allow_override: true
+      #- uses: meeDamian/github-release@2.0 # override release to attach another pdf
+      #  with:
+      #    token: ${{ secrets.ACCESS_TOKEN }}
+      #    tag: pdf-release
+      #    name: PDFs
+      #    body: Automated release
+      #    gzip: false
+      #    files: output/PRO-KASCHE.pdf
+      #    allow_override: true
+      #- uses: meeDamian/github-release@2.0 # override release to attach another pdf
+      #  with:
+      #    token: ${{ secrets.ACCESS_TOKEN }}
+      #    tag: pdf-release
+      #    name: PDFs
+      #    body: Automated release
+      #    gzip: false
+      #    files: output/EMB-GUENTHER.pdf
+      #    allow_override: true
+      #- uses: meeDamian/github-release@2.0 # override release to attach another pdf
+      #  with:
+      #    token: ${{ secrets.ACCESS_TOKEN }}
+      #    tag: pdf-release
+      #    name: PDFs
+      #    body: Automated release
+      #    gzip: false
+      #    files: output/OOP-CASSELT.pdf
+      #    allow_override: true
+      #- uses: meeDamian/github-release@2.0 # override release to attach another pdf
+      #  with:
+      #    token: ${{ secrets.ACCESS_TOKEN }}
+      #    tag: pdf-release
+      #    name: PDFs
+      #    body: Automated release
+      #    gzip: false
+      #    files: output/SWE-LKF.pdf
+      #    allow_override: true
+      #- uses: meeDamian/github-release@2.0 # override release to attach another pdf
+      #  with:
+      #    token: ${{ secrets.ACCESS_TOKEN }}
+      #    tag: pdf-release
+      #    name: PDFs
+      #    body: Automated release
+      #    gzip: false
+      #    files: output/SWE-PRUEFUNGSAUFGABEN.pdf
+      #    allow_override: true

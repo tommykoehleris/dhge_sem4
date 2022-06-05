@@ -82,7 +82,7 @@ jobs:
           name: PDFs
           body: Automated release
           gzip: false
-          files: output/ABWL-LEDER.pdf output/DBS-DORENDORF.pdf output/ASM-GUENTHER.pdf output/SWE-KASCHE.pdf output/SWS-KUSCHE.pdf output/PRO-KASCHE.pdf output/EMB-GUENTHER.pdf output/OOP-CASSELT.pdf output/MPP-PI.pdf output/SWE-LKF.pdf output/SWE-PRUEFUNGSAUFGABEN.pdf
+          files: output/*.pdf
           allow_override: true
       #- uses: meeDamian/github-release@2.0 # override release to attach another pdf
       #  with:

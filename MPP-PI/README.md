@@ -382,7 +382,7 @@ $$
 
 ## Inhalte
 
--  wie viel Bit benötigt man, um 1 Fehler zu erkennen bzw. zu korrigieren? (Hamming Code)
+- Wie viel Bit benötigt man, um 1 Fehler zu erkennen bzw. zu korrigieren? 1/3 (Hamming 7-4 Code)
 - AD Wandler
 - Multiplexer, MUX-Bus, Vorteile gegenüber einem normalen Bus
 - Normalformen

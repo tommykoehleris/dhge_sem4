@@ -3,7 +3,7 @@ MPP1 - Themenkatalog
 
 > **Hinweis**
 >
-> Dieser Themenkatalog basiert auf den Katalog von PI19 und wurde von PI20 *vor* der MPP angepasst. 
+> Dieser Themenkatalog basiert auf den Katalog von PI19 und wurde von PI20 *vor* der MPP angepasst.
 
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -344,6 +344,21 @@ $$\begin{matrix}
 $$
 6\cdot 7^0 + 1 \cdot 7^1 + 3 \cdot 7^2 = 160_{10}
 $$
+
+# Datenträgerverwaltung
+
+![Dateiverwaltung](./assets/dateiverwaltung.png)
+![Festplattenaufbau](./assets/festplattenaufbau.png)
+
+## Datenverwaltung
+
+- Jede Datei erhält eigenen Dateidiskriptor
+  - Datensatz der Datei näher Beschreibt (Dateiname, Adresse etc.)
+- Organisation der Daten in Dateien (Zusammengefasste Menge an Daten in bestimmter Struktur)
+- Wenn Datei Blockgröße des Speichermediums überschreitet, können Daten nicht sequentiell gespeichert werden
+  - OS muss entsprechende Byteströme finden
+  - Defragmentierung schiebt Daten wieder zusammen
+
 
 ----------------------------------------------------------------------------------------------------------------------
 

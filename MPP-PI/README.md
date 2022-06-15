@@ -345,12 +345,12 @@ $$
 6\cdot 7^0 + 1 \cdot 7^1 + 3 \cdot 7^2 = 160_{10}
 $$
 
-# Datenträgerverwaltung
+## Datenträgerverwaltung
 
 ![Dateiverwaltung](./assets/dateiverwaltung.png)
 ![Festplattenaufbau](./assets/festplattenaufbau.png)
 
-## Datenverwaltung
+### Datenverwaltung
 
 - Jede Datei erhält eigenen Dateidiskriptor
   - Datensatz der Datei näher Beschreibt (Dateiname, Adresse etc.)
@@ -359,7 +359,7 @@ $$
   - OS muss entsprechende Byteströme finden
   - Defragmentierung schiebt Daten wieder zusammen
 
-## Organisation von Dateien
+### Organisation von Dateien
 
 - Sequenzielle Dateiorganisation (Heap)
 - Indexierte Dateien

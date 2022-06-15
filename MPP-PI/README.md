@@ -4,6 +4,8 @@ MPP1 - Themenkatalog
 > **Hinweis**
 >
 > Dieser Themenkatalog basiert auf den Katalog von PI19 und wurde von PI20 *vor* der MPP angepasst.
+> Inhalte kommen größtenteils von Mitstudenten.
+> Diese Zusammenfassung kann keine eigenen Aufzeichnungen ersetzen und dient ausschließlich als Leitpfaden.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -163,11 +165,12 @@ MPP1 - Themenkatalog
 >
 > - Struktogramm?
 
-## Grundbegriffe zum Wiederholen
+## Grundbegriffe zum eventuellen Wiederholen
 
 - EVA-Prinzip
 - Single-User/Multi-User Systeme
 - [Datenhierarchie](https://www.youtube.com/watch?v=gBq7rww9amw&feature=youtu.be)
+- Unix-Dateisystem
 
 ## Von-Neumann-Architektur
 
@@ -224,7 +227,7 @@ STOP
 - **Ausführungsphase:** Erzeugung von Steuersignalen zur Ausführung des Befehls (z.B. durch Mikroprogramme)
 - Wiederholung der Phasen, bis ein STOP-Befehl erreicht wird
 
-## Einordnung von Programmiersprachen
+## Einordnung von Programmiersprachen / Programmierparadigmen
 
 | Maschinenorientierte Sprachen                                                 | Problemorientierte Sprachen                                           |
 | ----------------------------------------------------------------------------- | --------------------------------------------------------------------- |
@@ -240,6 +243,8 @@ STOP
 - definierter Kern: Wesen der Sprachen überall gleich
 - eventuell maschinen-/plattformspezifische Erweiterungen
 - sog. Quellprogramme werden mit Übersetzungswerkzeugen in Maschinensprache des Rechners übersetzt
+- Eigentlicher Programmcode ist Quellprogramm
+- "Höhere Programmiersprache"
 
 **Imperative Programmiersprachen**
 
@@ -374,6 +379,17 @@ $$
 ----------------------------------------------------------------------------------------------------------------------
 
 # Digitaltechnik
+
+## Inhalte
+
+- Wie viel Bit benötigt man, um 1 Fehler zu erkennen bzw. zu korrigieren? 1/3 (Hamming 7-4 Code)
+- AD Wandler
+- Multiplexer, MUX-Bus, Vorteile gegenüber einem normalen Bus
+- Normalformen
+- Konjunktion, Disjunktion, Möglichkeiten zur Vereinfachung, Boolesche Algebra, KV
+- De-morgansches-Gesetz
+- XOR Wahrheitstabelle
+- RS FlipFlop Definition und Schaltung aufzeichnen
 
 ## Eigenschaften von Codes
 
@@ -626,6 +642,88 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 - **Bistabil:** zwei stabile Zustände
 - **Monostabil:** ein statischer Zustand und ein quasistatischer Zustand (zeitlich begrenzt)
 - **Astabil:** kein stabiler Zustand (toggelt)
+
+## Schaltsymbole
+
+- Grundsätzlich: Rechteck mit Symbol in der Mitte, Eingangssignale und Ausgangssignale
+  - Kreise für Negegation an Ausgängen
+- Zeichen
+  - G: UND-Abhängigkeit
+  - ¬: Invertierung
+  - V: ODER
+  - N: XOR
+  - Z: Verbindungsabhängigkeit
+  - X: Übertragungsabhängigkeit
+
+## Multiplexer/Demultiplexer
+
+- kombinatorische Logikschaltung
+- von mehreren Eingangsleitung auf einen einzigen Common Output umschalten
+
+![Multiplexer](./assets/logic_multiplexer.jpg)
+![Demultiplexer](./assets/logic_demultiplexer.jpg)
+
+## FlipFlop
+
+### RS-FlipFlop
+
+- nicht taktgesteuert
+- besteht aus zwei NOR oder zwei NAND Verknüpfungen
+- 1-aktiver FlipFlop: RS mit NOR
+- 0-aktiver FlipFlop: RS mit NAND
+- häufig hinter Schalter oder Taster um Schaltvorgang prellfrei zu machen
+
+![RS-FF](./assets/rs-ff.jpg)
+
+#### Wahrheitstabelle der Gatter
+
+|   | OR|NOR|
+|---|---|---|
+|0 0| 0 | 1 |
+|0 1| 1 | 0 |
+|1 1| 1 | 0 |
+|1 0| 1 | 0 |
+
+#### Wahrheitstabelle FF
+
+|  S|  R|$Q^m+1$|   |
+|---|---|---|---|
+|0  |0  |$Q^m$|Speichern (vorheriger Zustand bleibt erhalten)|
+|0  |1  |0  |Zurücksetzen (R-Reset)|
+|1  |0  |1  |Setzen|
+|1  |1  |-|WIU WIU VERBOTEN WIU WIU AAAAH (Inversion würde aufgehoben werden)|
+
+### D-FF
+
+![D-FF](./assets/d-ff.jpg)
+
+|  D|  C|$Q^m+1$|   |
+|---|---|---|---|
+|0  |1  |0|Zurücksetzen|
+|1  |1  |1  |Setzen|
+|d  |0  |$Q^m$  |Speichern|
+
+### JK-FF
+
+![JK-FF](./assets/jk-ff.jpg)
+
+| C | J | K | $Q^m+1$   |              |
+|---|---|---|-----------|--------------|
+| 1 | 0 | 0 | $Q^m$     | Speichern    |
+| 1 | 0 | 1 | 0         | Zurücksetzen |
+| 1 | 1 | 0 | 1         | Setzen       |
+| 1 | 1 | 1 | ¬$Q^m$| Toggeln      |
+| 0 | d | d | $Q^m$     | Speichern    |
+
+### T-FF
+
+![t-FF](./assets/t-ff.jpg)
+
+| C          | T | $Q^m+1$ |
+|------------|---|---------|
+| 0          | 0 | $Q^m$   |
+| $\uparrow$ | 0 | $Q^m$   |
+| $\uparrow$ | 1 | ¬$Q^m$  |
 
 ----------------------------------------------------------------------------------------------------------------------
 

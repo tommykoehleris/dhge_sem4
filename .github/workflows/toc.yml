@@ -2,6 +2,8 @@ on:
   pull_request:
     branches:
       - main
+  push:
+
 name: TOC Generator
 jobs:
   generateTOC:

@@ -5,6 +5,8 @@ MPP1 - Themenkatalog
 >
 > Dieser Themenkatalog basiert auf den Katalog von PI19 und wurde von PI20 *vor* der MPP angepasst.
 > Inhalte kommen größtenteils von Mitstudenten.
+> Diese Zusammenfassung kann keine eigenen Aufzeichnungen ersetzen und dient ausschließlich als Leitpfaden.
+
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->

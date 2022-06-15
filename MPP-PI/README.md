@@ -4,6 +4,7 @@ MPP1 - Themenkatalog
 > **Hinweis**
 >
 > Dieser Themenkatalog basiert auf den Katalog von PI19 und wurde von PI20 *vor* der MPP angepasst.
+> Inhalte kommen größtenteils von Mitstudenten.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -377,6 +378,18 @@ $$
 ----------------------------------------------------------------------------------------------------------------------
 
 # Digitaltechnik
+
+## Inhalte
+
+-  wie viel Bit benötigt man, um 1 Fehler zu erkennen bzw. zu korrigieren? 1/3 (Hamming 7-4
+Code)
+- AD Wandler
+- Multiplexer, MUX-Bus, Vorteile gegenüber einem normalen Bus
+- Normalformen
+- Konjunktion, Disjunktion, Möglichkeiten zur Vereinfachung, Boolesche Algebra, KV
+- De-morgansches-Gesetz
+- XOR Wahrheitstabelle
+- RS FlipFlop Definition und Schaltung aufzeichnen
 
 ## Eigenschaften von Codes
 

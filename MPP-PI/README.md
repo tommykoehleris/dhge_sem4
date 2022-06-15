@@ -696,6 +696,15 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 
 ### D-FF
 
+![D-FF](./assets/d-ff.jpg)
+
+#### Wahrheitstabelle
+
+|  D|  C|$Q^m+1$|   |
+|---|---|---|---|
+|0  |1  |0|Zurücksetzen|
+|1  |1  |1  |Setzen|
+|d  |0  |$Q^m$  |Speichern|
 
 
 ----------------------------------------------------------------------------------------------------------------------

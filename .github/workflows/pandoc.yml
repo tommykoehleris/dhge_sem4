@@ -6,7 +6,7 @@ on:
 jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
-    if: "contains(github.event.head_commit.message, 'TOCGEN')"
+    if: "!contains(github.event.head_commit.message, 'chore(docs): update TOC')" || "!contains(github.event.head_commit.message, 'TOC')"
     steps:
       - uses: actions/checkout@v2
       - run: |

@@ -5,7 +5,6 @@ MPP1 - Themenkatalog
 >
 > Dieser Themenkatalog basiert auf den Katalog von PI19 und wurde von PI20 *vor* der MPP angepasst.
 
-
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
@@ -161,6 +160,7 @@ MPP1 - Themenkatalog
 > - Struktogramm?
 
 ## Grundbegriffe zum Wiederholen
+
 - EVA-Prinzip
 - Single-User/Multi-User Systeme
 - [Datenhierarchie](https://www.youtube.com/watch?v=gBq7rww9amw&feature=youtu.be)
@@ -359,6 +359,13 @@ $$
   - OS muss entsprechende Byteströme finden
   - Defragmentierung schiebt Daten wieder zusammen
 
+## Organisation von Dateien
+
+- Sequenzielle Dateiorganisation (Heap)
+- Indexierte Dateien
+- Indexsequentiell
+- Multilisten
+- Mehrstufige Indexstrukturen
 
 ----------------------------------------------------------------------------------------------------------------------
 

@@ -1,15 +1,12 @@
 name: Create PDF release from markdown
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
   workflow_dispatch:
 
 jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
+    if: "contains(github.event.head_commit.message, 'TOCGEN')"
     steps:
       - uses: actions/checkout@v2
       - run: |

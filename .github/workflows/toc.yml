@@ -2,6 +2,8 @@ on:
   pull_request:
     branches:
       - main
+  push:
+
 name: TOC Generator
 jobs:
   generateTOC:
@@ -15,4 +17,3 @@ jobs:
         COMMIT_NAME: "TOCGEN"
         CREATE_PR: false
         TARGET_PATHS: "./ABWL-LEDER/README.md, ./ASM-GUENTHER/README.md, ./ASM-GUENTHER/appendix/praktikum.md, ./DBS-DORENDORF/README.md, ./PRO-KASCHE/README.md, ./SWE-KASCHE/README.md, ./SWS-KUSCHE/README.md, ./EMB-GUENTHER/README.md, ./OOP-CASSELT/README.md, ./MPP-PI/README.md"
-

@@ -645,6 +645,25 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 - **Monostabil:** ein statischer Zustand und ein quasistatischer Zustand (zeitlich begrenzt)
 - **Astabil:** kein stabiler Zustand (toggelt)
 
+## Schaltsymbole
+
+- Grundsätzlich: Rechteck mit Symbol in der Mitte, Eingangssignale und Ausgangssignale
+  - Kreise für Negegation an Ausgängen
+- Zeichen
+  - G: UND-Abhängigkeit
+  - ¬: Invertierung
+  - V: ODER
+  - N: XOR
+  - Z: Verbindungsabhängigkeit
+  - X: Übertragungsabhängigkeit
+
+## Multiplexer/Demultiplexer
+- kombinatorische Logikschaltung
+- von mehreren Eingangsleitung auf einen einzigen Common Output umschalten
+![Multiplexer](./assets/logic_multiplexer.jpg)
+![Demultiplexer](./assets/logic_demultiplexer.jpg)
+
+
 ----------------------------------------------------------------------------------------------------------------------
 
 # Elektrotechnik

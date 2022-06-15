@@ -658,11 +658,39 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
   - X: Übertragungsabhängigkeit
 
 ## Multiplexer/Demultiplexer
+
 - kombinatorische Logikschaltung
 - von mehreren Eingangsleitung auf einen einzigen Common Output umschalten
 ![Multiplexer](./assets/logic_multiplexer.jpg)
 ![Demultiplexer](./assets/logic_demultiplexer.jpg)
 
+## FlipFlop
+
+### RS-FlipFlop
+
+- nicht taktgesteuert
+- besteht aus zwei NOR oder zwei NAND Verknüpfungen
+- 1-aktiver FlipFlop: RS mit NOR
+- 0-aktiver FlipFlop: RS mit NAND
+- häufig hinter Schalter oder Taster um Schaltvorgang prellfrei zu machen
+
+#### Wahrheitstabelle der Gatter
+
+|   | OR|NOR|
+|---|---|---|
+|0 0| 0 | 1 |
+|0 1| 1 | 0 |
+|1 1| 1 | 0 |
+|1 0| 1 | 0 |
+
+#### Wahrheitstabelle FF
+
+|  S|  R|$Q^m+1$|   |
+|---|---|---|---|
+|0  |0  |$Q^m$|Speichern (vorheriger Zustand bleibt erhalten)|
+|0  |1  |0  |Zurücksetzen (R-Reset)|
+|1  |0  |1  |Setzen|
+|1  |1  |---|WIU WIU VERBOTEN WIU WIU AAAAH (Inversion würde aufgehoben werden)|
 
 ----------------------------------------------------------------------------------------------------------------------
 

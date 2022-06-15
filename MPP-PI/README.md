@@ -674,6 +674,8 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 - 0-aktiver FlipFlop: RS mit NAND
 - häufig hinter Schalter oder Taster um Schaltvorgang prellfrei zu machen
 
+![RS-FF](./assets/rs-ff.jpg)
+
 #### Wahrheitstabelle der Gatter
 
 |   | OR|NOR|
@@ -691,6 +693,10 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 |0  |1  |0  |Zurücksetzen (R-Reset)|
 |1  |0  |1  |Setzen|
 |1  |1  |---|WIU WIU VERBOTEN WIU WIU AAAAH (Inversion würde aufgehoben werden)|
+
+### D-FF
+
+
 
 ----------------------------------------------------------------------------------------------------------------------
 

@@ -691,7 +691,7 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 |0  |0  |$Q^m$|Speichern (vorheriger Zustand bleibt erhalten)|
 |0  |1  |0  |Zurücksetzen (R-Reset)|
 |1  |0  |1  |Setzen|
-|1  |1  |---|WIU WIU VERBOTEN WIU WIU AAAAH (Inversion würde aufgehoben werden)|
+|1  |1  |-|WIU WIU VERBOTEN WIU WIU AAAAH (Inversion würde aufgehoben werden)|
 
 ### D-FF
 
@@ -714,6 +714,16 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 | 1 | 1 | 0 | 1         | Setzen       |
 | 1 | 1 | 1 | ¬$Q^m$| Toggeln      |
 | 0 | d | d | $Q^m$     | Speichern    |
+
+### T-FF
+
+![t-FF](./assets/t-ff.jpg)
+
+| C          | T | $Q^m+1$ |
+|------------|---|---------|
+| 0          | 0 | $Q^m$   |
+| $\uparrow$ | 0 | $Q^m$   |
+| $\uparrow$ | 1 | ¬$Q^m$  |
 
 ----------------------------------------------------------------------------------------------------------------------
 

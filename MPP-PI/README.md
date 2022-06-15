@@ -163,11 +163,12 @@ MPP1 - Themenkatalog
 >
 > - Struktogramm?
 
-## Grundbegriffe zum Wiederholen
+## Grundbegriffe zum eventuellen Wiederholen
 
 - EVA-Prinzip
 - Single-User/Multi-User Systeme
 - [Datenhierarchie](https://www.youtube.com/watch?v=gBq7rww9amw&feature=youtu.be)
+- Unix-Dateisystem
 
 ## Von-Neumann-Architektur
 
@@ -224,7 +225,7 @@ STOP
 - **Ausführungsphase:** Erzeugung von Steuersignalen zur Ausführung des Befehls (z.B. durch Mikroprogramme)
 - Wiederholung der Phasen, bis ein STOP-Befehl erreicht wird
 
-## Einordnung von Programmiersprachen
+## Einordnung von Programmiersprachen / Programmierparadigmen
 
 | Maschinenorientierte Sprachen                                                 | Problemorientierte Sprachen                                           |
 | ----------------------------------------------------------------------------- | --------------------------------------------------------------------- |
@@ -240,6 +241,8 @@ STOP
 - definierter Kern: Wesen der Sprachen überall gleich
 - eventuell maschinen-/plattformspezifische Erweiterungen
 - sog. Quellprogramme werden mit Übersetzungswerkzeugen in Maschinensprache des Rechners übersetzt
+- Eigentlicher Programmcode ist Quellprogramm
+- "Höhere Programmiersprache"
 
 **Imperative Programmiersprachen**
 

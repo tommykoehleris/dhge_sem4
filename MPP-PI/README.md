@@ -7,7 +7,6 @@ MPP1 - Themenkatalog
 > Inhalte kommen größtenteils von Mitstudenten.
 > Diese Zusammenfassung kann keine eigenen Aufzeichnungen ersetzen und dient ausschließlich als Leitpfaden.
 
-
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
@@ -383,8 +382,7 @@ $$
 
 ## Inhalte
 
--  wie viel Bit benötigt man, um 1 Fehler zu erkennen bzw. zu korrigieren? 1/3 (Hamming 7-4
-Code)
+-  wie viel Bit benötigt man, um 1 Fehler zu erkennen bzw. zu korrigieren? 1/3 (Hamming 7-4 Code)
 - AD Wandler
 - Multiplexer, MUX-Bus, Vorteile gegenüber einem normalen Bus
 - Normalformen
@@ -661,6 +659,7 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 
 - kombinatorische Logikschaltung
 - von mehreren Eingangsleitung auf einen einzigen Common Output umschalten
+
 ![Multiplexer](./assets/logic_multiplexer.jpg)
 ![Demultiplexer](./assets/logic_demultiplexer.jpg)
 
@@ -715,7 +714,6 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 | 1 | 1 | 0 | 1         | Setzen       |
 | 1 | 1 | 1 | $\negQ^m$ | Toggeln      |
 | 0 | d | d | $Q^m$     | Speichern    |
-
 
 ----------------------------------------------------------------------------------------------------------------------
 

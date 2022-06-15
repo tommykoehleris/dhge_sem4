@@ -1,6 +1,10 @@
 MPP1 - Themenkatalog
 ====================
 
+> **Hinweis**
+>
+> Dieser Themenkatalog basiert auf den Katalog von PI19 und wurde von PI20 *vor* der MPP angepasst.
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
@@ -8,6 +12,7 @@ MPP1 - Themenkatalog
 - [Präambel](#pr%C3%A4ambel)
   - [Most Important Topics](#most-important-topics)
 - [Grundlagen der Informationsverarbeitung](#grundlagen-der-informationsverarbeitung)
+  - [Grundbegriffe zum Wiederholen](#grundbegriffe-zum-wiederholen)
   - [Von-Neumann-Architektur](#von-neumann-architektur)
   - [Harvard-Architektur](#harvard-architektur)
   - [Befehlsverarbeitung](#befehlsverarbeitung)
@@ -21,6 +26,9 @@ MPP1 - Themenkatalog
   - [Umrechnen von Zahlensystemen](#umrechnen-von-zahlensystemen)
     - [Dezimal zu X](#dezimal-zu-x)
     - [X zu Dezimal](#x-zu-dezimal)
+  - [Datenträgerverwaltung](#datentr%C3%A4gerverwaltung)
+    - [Datenverwaltung](#datenverwaltung)
+    - [Organisation von Dateien](#organisation-von-dateien)
 - [Digitaltechnik](#digitaltechnik)
   - [Eigenschaften von Codes](#eigenschaften-von-codes)
     - [BCD-Code](#bcd-code)
@@ -145,12 +153,21 @@ MPP1 - Themenkatalog
 - Definition Betriebssystem, Aufgaben, Scheduling, Parallelisierung
 - RAID Level
 - Sortieralogrithmen
+- Grundlagen Schaltung/Elektrotechnik
+  - Vorwiderstand berechnen
+  - R=U/I etc.
 
 # Grundlagen der Informationsverarbeitung
 
 > **ToDo:**
 >
 > - Struktogramm?
+
+## Grundbegriffe zum Wiederholen
+
+- EVA-Prinzip
+- Single-User/Multi-User Systeme
+- [Datenhierarchie](https://www.youtube.com/watch?v=gBq7rww9amw&feature=youtu.be)
 
 ## Von-Neumann-Architektur
 
@@ -331,6 +348,28 @@ $$\begin{matrix}
 $$
 6\cdot 7^0 + 1 \cdot 7^1 + 3 \cdot 7^2 = 160_{10}
 $$
+
+## Datenträgerverwaltung
+
+![Dateiverwaltung](./assets/dateiverwaltung.png)
+![Festplattenaufbau](./assets/festplattenaufbau.png)
+
+### Datenverwaltung
+
+- Jede Datei erhält eigenen Dateidiskriptor
+  - Datensatz der Datei näher Beschreibt (Dateiname, Adresse etc.)
+- Organisation der Daten in Dateien (Zusammengefasste Menge an Daten in bestimmter Struktur)
+- Wenn Datei Blockgröße des Speichermediums überschreitet, können Daten nicht sequentiell gespeichert werden
+  - OS muss entsprechende Byteströme finden
+  - Defragmentierung schiebt Daten wieder zusammen
+
+### Organisation von Dateien
+
+- Sequenzielle Dateiorganisation (Heap)
+- Indexierte Dateien
+- Indexsequentiell
+- Multilisten
+- Mehrstufige Indexstrukturen
 
 ----------------------------------------------------------------------------------------------------------------------
 

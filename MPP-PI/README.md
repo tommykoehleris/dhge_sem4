@@ -191,23 +191,7 @@ MPP1 - Themenkatalog
 
 ## Von-Neumann-Architektur
 
-```text
-┌──────────────────────────────┐
-│             CPU              │
-│ Rechenwerk        Steuerwerk │
-│     ╱╲                ╱╲     │
-└─────┼┼────────────────┼┼─────┘
-      ╲╱                ╲╱
-┌──────────────────────────────┐
-│          Bus-System          │
-└──────────────────────────────┘
-      ╱╲                ╱╲
-      ││                ││
-      ╲╱                ╲╱
-┌──────────┐    ┌──────────────┐
-│ I/O-Werk │    │ Speicherwerk │
-└──────────┘    └──────────────┘
-```
+![Neumann](./assets/neumann.png)
 
 - binär codierte Daten und Programme im gleichen Speicher
 - Ordnung aufeinanderfolgender Befehle entspricht physischen Speicherung (Abweichungen über Sprünge möglich)

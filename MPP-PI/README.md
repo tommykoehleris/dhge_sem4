@@ -6,6 +6,7 @@ MPP1 - Themenkatalog
 > Dieser Themenkatalog basiert auf den Katalog von PI19 und wurde von PI20 *vor* der MPP angepasst.
 > Inhalte kommen größtenteils von Mitstudenten.
 > Diese Zusammenfassung kann keine eigenen Aufzeichnungen ersetzen und dient ausschließlich als Leitpfaden.
+> Sämtliche Überschriften mit ! wurden nicht behandelt.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -449,7 +450,9 @@ Ziffer | Gray-Code
   15   |   1000
 ```
 
-### Aiken-Code
+### !Aiken-Code!
+
+> Nicht bei PI20 behandelt
 
 - Ziffern 5-9 negativsymmetrisch zu 0-4 $\rightarrow$ Neunerkomplementbildung durch Negation
 
@@ -468,10 +471,9 @@ Ziffer | Aiken-Code
    9   |   1111
 ```
 
-## Fehlererkennbare Codes
+## !Fehlererkennbare Codes!
 
-> *Wie können Fehler bei der Signalübertragung erkannt werden?*
-> *Wie viele Bits werden benötigt um einen Fehler zu erkennen bzw. beheben?*
+> Wurde bei PI20 nicht behandelt
 
 - Ziel: Erkennen einfacher Fehler $\rightarrow$ Verfälschung von `0` in `1` oder `1` in `0`
 - Methoden: Quersummenprüfung, gleichgewichtige Codes (gleiche Zahl mit `1` belegter Stellen)
@@ -509,9 +511,9 @@ Dezimal | 7 | 4 | 2 | 1 | 0
   ...
 ```
 
-## Fehlerkorrigierbare Codes
+## !Fehlerkorrigierbare Codes!
 
-> *Wie viele Bits werden benötigt um einen Fehler zu erkennen bzw. beheben?*
+> Wurde bei PI20 nicht behandelt
 
 - Ziel: Fehlerkorrektur für übertragene Zeichen
 - Methoden: Rückfrageverfahren, automatische Fehlerkorrektur durch Empfänger bei Fehlererkennung (Block-Verfahren, Hamming-Codes)

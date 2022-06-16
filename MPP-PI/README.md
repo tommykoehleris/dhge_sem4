@@ -1357,14 +1357,15 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 | Schicht                | Funktion                                                     | Protokolle | TCP/IP                          |
 | ---------------------- | ------------------------------------------------------------ | ---------- | ------------------------------- |
 | Anwendungsschicht      | Kommunikation zw. Anwendungen                                | NFS, DNS,  | Anwendungungsschicht            |
-| Darstellungsschicht    | Transformation zw. Datenformaten, Verschlüsselung            | DHCP, HTTP | Anwendungungsschicht            |
-| Sitzungsschicht        | Dialogsteuerung, Synchronisation                             | FTP, ...   | Anwendungungsschicht            |
+| Darstellungsschicht    | Transformation zw. Datenformaten, Verschlüsselung            |            | Anwendungungsschicht            |
+| Sitzungsschicht        | Dialogsteuerung, Synchronisation                             |            | Anwendungungsschicht            |
 | Transportschicht       | Ende-zu-Ende-Kommunikation zw. Prozessen                     | TCP, UDP   | Transportschicht                |
 | Vermittlungsschicht    | Wegewahl Sender -> Empfänger, Kopplung heterogener Teilnetze | IP         | Internetschicht                 |
 | Sicherungsschicht      | Behandlung von Übertragungsfehlern                           | Ethernet   | Netzzugangsschicht (Link Layer) |
 | Bitübertragungsschicht | physikalische Ebene -> Übertragung von Signalen              |            | Netzzugangsschicht (Link Layer) |
 
-- Protokolle der oberen 3 Schichten nicht eins zu eins zuordenbar
+- Protokolle der oberen 3 Schichten nicht eins zu eins zuordbar
+- Normalerweise in ein Protokoll vereint
 
 - Protokoll = Regeln zur Steuerung der Kommunikation
 - Dienst = durch Sicht erbrachte Funktionalität

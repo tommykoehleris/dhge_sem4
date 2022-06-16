@@ -732,6 +732,32 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 - Schaltnetze besitzt keine Rückkopplung, Schaltwerke mindestens ein Ausgang auf einem Eingang rückgekoppelt
 - Schaltwerk erhält speichernden Charakter
 
+### Hazards
+
+- Entsteht bei Änderung zweier Eingangsvariablen, Ausgangszustand soll aber 1 bleiben
+- Statisch
+  - 0-Hazzard: Signal sollte 1 sein, fällt kurz auf 0 runter
+  - 1-Hazzard: Signal sollte 0 sein, springt kurz auf 1
+- Dynamisch
+  - 0-Hazzard: Signal sollte 1 sein, fällt *immer wieder* kurz auf 0 runter
+  - 1-Hazzard: Signal sollte 0 sein, springt *immer wieder* kurz auf 1
+
+### Moore
+
+- $Y$ ist ausschließlich von $z^m$ abhängig
+- Nach ersten Schaltznetz fließen die Ausgangsvariablen nicht in Betrachtung ein
+
+![Moore1](./assets/moore1.jpg)
+![Moore2](./assets/moore2.jpg)
+
+### Mealy
+
+- $Y$ ist sowohl von $z^m$ als auch von mindestens einer Eingangsvariable $x$ abhängig
+- In einem zweiten Schaltnetz werden $x$ neu betrachtet
+
+![Mealy1](./assets/mealy1.jpg)
+![Mealy2](./assets/mealy2.jpg)
+
 ----------------------------------------------------------------------------------------------------------------------
 
 # Elektrotechnik

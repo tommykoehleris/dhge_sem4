@@ -814,6 +814,9 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 - sperrt in Abhängigkeit von Stromrichtung
 - Anwendung: Gleichrichter, LeuchtEmitterDiode (LED), Schutzdiode für Spulen
 
+Diodenkennlinie:
+![Diodenkennlinie](./assets/diodenkennlinie.gif)
+
 **Transistor**
 
 - Halbleiterelement

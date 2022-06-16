@@ -812,9 +812,13 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 
 - Halbleiterelement
 - sperrt in Abhängigkeit von Stromrichtung
+  - ist bei bestimmten Spannungen geschlossen/offen
+  - Wenn geschlossen rechnerisch ein Widerstand dahinter geschalten
 - Anwendung: Gleichrichter, LeuchtEmitterDiode (LED), Schutzdiode für Spulen
+- Zehnerdiode: Auf Betrieb im Durchbruchsbereich ausgelegt, für Spannungsbegrenzung/stabilisierung geeignet
 
 Diodenkennlinie:
+
 ![Diodenkennlinie](./assets/diodenkennlinie.gif)
 
 **Transistor**

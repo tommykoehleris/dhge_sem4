@@ -725,6 +725,11 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 | $\uparrow$ | 0 | $Q^m$   |
 | $\uparrow$ | 1 | ¬$Q^m$  |
 
+## Schaltnetz/Schaltwerk
+
+- Schaltnetze besitzt keine Rückkopplung, Schaltwerke mindestens ein Ausgang auf einem Eingang rückgekoppelt
+- Schaltwerk erhält speichernden Charakter
+
 ----------------------------------------------------------------------------------------------------------------------
 
 # Elektrotechnik

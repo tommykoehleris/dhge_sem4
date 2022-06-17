@@ -119,6 +119,7 @@ MPP1 - Themenkatalog
   - [RAID](#raid)
   - [Pipes](#pipes)
   - [Datensicherung](#datensicherung)
+  - [Parallelisierung](#parallelisierung)
 - [Rechnernetze](#rechnernetze)
   - [ISO/OSI-Referenzmodell und TCP/IP](#isoosi-referenzmodell-und-tcpip)
   - [Netzwerktopologien](#netzwerktopologien)
@@ -1402,6 +1403,13 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 - Offline Backup $\rightarrow$ nicht immer verfügbar und online, braucht Zeit um eingesetzt werden zu können
 - Hot Backup $\rightarrow$ wird im laufenden Betrieb erstellt
 - Cold Backup $\rightarrow$ wird im ausgeschalteten Zustand erstellt (konsistenter Zustand wird gesichert)
+
+## Parallelisierung
+
+- mehrere Recheneinheiten arbeiten parallel
+- Beschleunigen von Berechnungen
+- Erfüllung großer Speicheranforderungen
+- Höherer Durchsatz
 
 # Rechnernetze
 

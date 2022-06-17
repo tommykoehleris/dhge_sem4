@@ -811,6 +811,14 @@ Diodenkennlinie:
 - besteht aus: Kollektor, Emitter und Basis
 - Grundlage für heutige Rechentechnik
 - Anwendung: Verstärker, Schalter
+- Betriebsarten: Inversbetrieb, Normalbetrieb, Sperrbetrieb, Sättigungsbetrieb
+
+**CMOS**
+
+- Halbleiterbauelement
+- Funktioniert durch Wechselspiel zweier Transistoren
+  - n-Kanal-Mosfet
+  - p-Kanal-Mosfet
 
 **Spule**
 

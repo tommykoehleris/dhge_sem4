@@ -123,6 +123,7 @@ MPP1 - Themenkatalog
 - [Rechnernetze](#rechnernetze)
   - [Grundlegende Themen](#grundlegende-themen)
   - [ISO/OSI-Referenzmodell und TCP/IP](#isoosi-referenzmodell-und-tcpip)
+  - [Verbindungstypen](#verbindungstypen)
   - [Netzwerktopologien](#netzwerktopologien)
   - [IP und Routing](#ip-und-routing)
   - [IPv4 vs IPv6](#ipv4-vs-ipv6)
@@ -1443,6 +1444,18 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 
 - Protokoll = Regeln zur Steuerung der Kommunikation
 - Dienst = durch Sicht erbrachte Funktionalität
+
+## Verbindungstypen
+
+|Verbindungsorientiert|Verbindungslos|
+|---------------------|--------------|
+|- Beziehung zwischen Sender und Empfänger|-Keine Information über Existenz einer Beziehung|
+|- Gegenseitiges Wissen über Beziehung|-Kommunikation kann ohne Verbindungsaufbau begonnen werden|
+
+|Leistungsvermittelt|Paketvermittelt|
+|-------------------|---------------|
+|- Fest zwischen Sender und Empfänger durchgeschaltet|- Leitungen werden gemeinsam genutzt|
+|- Ermöglicht Zusicherung von Quality of Service|-Daten werden in Pakete aufgeteilt, die Informationen über Zuordnung des Empfängers bereithalten|
 
 ## Netzwerktopologien
 

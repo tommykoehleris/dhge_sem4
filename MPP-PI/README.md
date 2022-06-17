@@ -6,6 +6,7 @@ MPP1 - Themenkatalog
 > Dieser Themenkatalog basiert auf den Katalog von PI19 und wurde von PI20 *vor* der MPP angepasst.
 > Inhalte kommen größtenteils von Mitstudenten.
 > Diese Zusammenfassung kann keine eigenen Aufzeichnungen ersetzen und dient ausschließlich als Leitpfaden.
+> Sämtliche Überschriften mit ! wurden nicht behandelt.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -36,9 +37,9 @@ MPP1 - Themenkatalog
   - [Eigenschaften von Codes](#eigenschaften-von-codes)
     - [BCD-Code](#bcd-code)
     - [Gray-Code](#gray-code)
-    - [Aiken-Code](#aiken-code)
-  - [Fehlererkennbare Codes](#fehlererkennbare-codes)
-  - [Fehlerkorrigierbare Codes](#fehlerkorrigierbare-codes)
+    - [!Aiken-Code!](#aiken-code)
+  - [!Fehlererkennbare Codes!](#fehlererkennbare-codes)
+  - [!Fehlerkorrigierbare Codes!](#fehlerkorrigierbare-codes)
   - [AD-Wandler](#ad-wandler)
   - [Volladdierer](#volladdierer)
   - [Konjunktive/Disjunktive-Normalform](#konjunktivedisjunktive-normalform)
@@ -54,10 +55,23 @@ MPP1 - Themenkatalog
     - [D-FF](#d-ff)
     - [JK-FF](#jk-ff)
     - [T-FF](#t-ff)
+  - [Schaltnetz/Schaltwerk](#schaltnetzschaltwerk)
+    - [Hazards](#hazards)
+    - [Moore](#moore)
+    - [Mealy](#mealy)
 - [Elektrotechnik](#elektrotechnik)
+  - [Grundlegende Inhalte](#grundlegende-inhalte)
   - [Grundlegende elektrische Bauteile](#grundlegende-elektrische-bauteile)
+    - [Kondensator](#kondensator)
+    - [Ohmscher Widerstand](#ohmscher-widerstand)
+    - [Diode](#diode)
+    - [Transistor](#transistor)
+      - [CMOS](#cmos)
+      - [Spule](#spule)
+      - [Schaltungstypen](#schaltungstypen)
   - [Flüchtiger RAM](#fl%C3%BCchtiger-ram)
   - [Signalübertragung Kabel](#signal%C3%BCbertragung-kabel)
+  - [weitere Themen](#weitere-themen)
 - [Algorithmen und Datenstrukturen](#algorithmen-und-datenstrukturen)
   - [Eigenschaften von Algorithmen](#eigenschaften-von-algorithmen)
   - [Sortieralgorithmen](#sortieralgorithmen)
@@ -66,6 +80,8 @@ MPP1 - Themenkatalog
     - [Insertion-Sort](#insertion-sort)
     - [Quick-Sort](#quick-sort)
     - [Merge-Sort](#merge-sort)
+  - [Binärbaum](#bin%C3%A4rbaum)
+  - [Einfach verkettete Liste](#einfach-verkettete-liste)
   - [Verschlüsselung](#verschl%C3%BCsselung)
     - [Schutzziele](#schutzziele)
     - [symmetrisch vs. asymmetrisch](#symmetrisch-vs-asymmetrisch)
@@ -73,6 +89,7 @@ MPP1 - Themenkatalog
   - [Digitale Signatur](#digitale-signatur)
   - [Stack und Queue](#stack-und-queue)
   - [Graphen](#graphen)
+  - [Struktogramm](#struktogramm)
 - [Automaten und Sprachen](#automaten-und-sprachen)
   - [Reguläre Ausdrücke](#regul%C3%A4re-ausdr%C3%BCcke)
   - [Grammatiken](#grammatiken)
@@ -101,8 +118,11 @@ MPP1 - Themenkatalog
   - [RAID](#raid)
   - [Pipes](#pipes)
   - [Datensicherung](#datensicherung)
+  - [Parallelisierung](#parallelisierung)
 - [Rechnernetze](#rechnernetze)
+  - [Grundlegende Themen](#grundlegende-themen)
   - [ISO/OSI-Referenzmodell und TCP/IP](#isoosi-referenzmodell-und-tcpip)
+  - [Verbindungstypen](#verbindungstypen)
   - [Netzwerktopologien](#netzwerktopologien)
   - [IP und Routing](#ip-und-routing)
   - [IPv4 vs IPv6](#ipv4-vs-ipv6)
@@ -184,23 +204,7 @@ MPP1 - Themenkatalog
 
 ## Von-Neumann-Architektur
 
-```text
-┌──────────────────────────────┐
-│             CPU              │
-│ Rechenwerk        Steuerwerk │
-│     ╱╲                ╱╲     │
-└─────┼┼────────────────┼┼─────┘
-      ╲╱                ╲╱
-┌──────────────────────────────┐
-│          Bus-System          │
-└──────────────────────────────┘
-      ╱╲                ╱╲
-      ││                ││
-      ╲╱                ╲╱
-┌──────────┐    ┌──────────────┐
-│ I/O-Werk │    │ Speicherwerk │
-└──────────┘    └──────────────┘
-```
+![Neumann](./assets/neumann.png)
 
 - binär codierte Daten und Programme im gleichen Speicher
 - Ordnung aufeinanderfolgender Befehle entspricht physischen Speicherung (Abweichungen über Sprünge möglich)
@@ -459,7 +463,9 @@ Ziffer | Gray-Code
   15   |   1000
 ```
 
-### Aiken-Code
+### !Aiken-Code!
+
+> Nicht bei PI20 behandelt
 
 - Ziffern 5-9 negativsymmetrisch zu 0-4 $\rightarrow$ Neunerkomplementbildung durch Negation
 
@@ -478,10 +484,9 @@ Ziffer | Aiken-Code
    9   |   1111
 ```
 
-## Fehlererkennbare Codes
+## !Fehlererkennbare Codes!
 
-> *Wie können Fehler bei der Signalübertragung erkannt werden?*
-> *Wie viele Bits werden benötigt um einen Fehler zu erkennen bzw. beheben?*
+> Wurde bei PI20 nicht behandelt
 
 - Ziel: Erkennen einfacher Fehler $\rightarrow$ Verfälschung von `0` in `1` oder `1` in `0`
 - Methoden: Quersummenprüfung, gleichgewichtige Codes (gleiche Zahl mit `1` belegter Stellen)
@@ -519,9 +524,9 @@ Dezimal | 7 | 4 | 2 | 1 | 0
   ...
 ```
 
-## Fehlerkorrigierbare Codes
+## !Fehlerkorrigierbare Codes!
 
-> *Wie viele Bits werden benötigt um einen Fehler zu erkennen bzw. beheben?*
+> Wurde bei PI20 nicht behandelt
 
 - Ziel: Fehlerkorrektur für übertragene Zeichen
 - Methoden: Rückfrageverfahren, automatische Fehlerkorrektur durch Empfänger bei Fehlererkennung (Block-Verfahren, Hamming-Codes)
@@ -735,6 +740,37 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 | $\uparrow$ | 0 | $Q^m$   |
 | $\uparrow$ | 1 | ¬$Q^m$  |
 
+## Schaltnetz/Schaltwerk
+
+- Schaltnetze besitzt keine Rückkopplung, Schaltwerke mindestens ein Ausgang auf einem Eingang rückgekoppelt
+- Schaltwerk erhält speichernden Charakter
+
+### Hazards
+
+- Entsteht bei Änderung zweier Eingangsvariablen, Ausgangszustand soll aber 1 bleiben
+- Statisch
+  - 0-Hazzard: Signal sollte 1 sein, fällt kurz auf 0 runter
+  - 1-Hazzard: Signal sollte 0 sein, springt kurz auf 1
+- Dynamisch
+  - 0-Hazzard: Signal sollte 1 sein, fällt *immer wieder* kurz auf 0 runter
+  - 1-Hazzard: Signal sollte 0 sein, springt *immer wieder* kurz auf 1
+
+### Moore
+
+- $Y$ ist ausschließlich von $z^m$ abhängig
+- Nach ersten Schaltznetz fließen die Ausgangsvariablen nicht in Betrachtung ein
+
+![Moore1](./assets/moore1.jpg)
+![Moore2](./assets/moore2.jpg)
+
+### Mealy
+
+- $Y$ ist sowohl von $z^m$ als auch von mindestens einer Eingangsvariable $x$ abhängig
+- In einem zweiten Schaltnetz werden $x$ neu betrachtet
+
+![Mealy1](./assets/mealy1.jpg)
+![Mealy2](./assets/mealy2.jpg)
+
 ----------------------------------------------------------------------------------------------------------------------
 
 # Elektrotechnik
@@ -744,38 +780,70 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 > - Kupferleiter (Widerstand & Kapazitiver Widerstand)
 > - RGB???
 
+## Grundlegende Inhalte
+
+- Warum ist RAM flüchtig
+- Wiederstand, kapazitiver Widerstand
+- Stromkreis abzeichnen
+- LED-Schaltkreis/Schaltkreise + LED Schaltsymbole
+- Dioden Kennlinie/Dioden-Diagramm
+- Vorwiderstand berechnen
+- elektrische Leistung
+- Stromkreis zeichnen, LED o.ä.
+
 ## Grundlegende elektrische Bauteile
 
-**Kondensator**
+### Kondensator
 
 - Speichern von elektrischen Ladungen
 - Anwendung: Glättungskondensatoren, Datenspeicherung im flüchtigen Speicher
 
-**Ohmscher Widerstand**
+### Ohmscher Widerstand
 
 - begrenzt den Strom
 - Spannung ändert sich anhand des Ohmschen Gesetzes
 - Ohmsches Gesetz:$R=\frac{U}{I}$
 - Anwendung: Vorwiderstand, Spannungsteiler
 
-**Diode**
+### Diode
 
 - Halbleiterelement
 - sperrt in Abhängigkeit von Stromrichtung
+  - ist bei bestimmten Spannungen geschlossen/offen
+  - Wenn geschlossen rechnerisch ein Widerstand dahinter geschalten
 - Anwendung: Gleichrichter, LeuchtEmitterDiode (LED), Schutzdiode für Spulen
+- Zehnerdiode: Auf Betrieb im Durchbruchsbereich ausgelegt, für Spannungsbegrenzung/stabilisierung geeignet
 
-**Transistor**
+Diodenkennlinie:
+
+![Diodenkennlinie](./assets/diodenkennlinie.gif)
+
+### Transistor
 
 - Halbleiterelement
 - besteht aus: Kollektor, Emitter und Basis
 - Grundlage für heutige Rechentechnik
 - Anwendung: Verstärker, Schalter
+- Betriebsarten: Inversbetrieb, Normalbetrieb, Sperrbetrieb, Sättigungsbetrieb
 
-**Spule**
+#### CMOS
+
+- Halbleiterbauelement
+- Funktioniert durch Wechselspiel zweier Transistoren
+  - n-Kanal-Mosfet
+  - p-Kanal-Mosfet
+
+#### Spule
 
 - Transformation von Spannungen
 - erzeugen Magnetfelder / Induktivität
 - Anwendungen: Relais, Störfilter
+
+#### Schaltungstypen
+
+- Basiskonfiguration: hat Spannungsverstärkung aber keine Stromverstärkung
+- Ermitterschaltung: hat Strom- und Spannungsverstärkung
+- Kollektorshaltung: hat Stromverstärkung aber keine Spannungsverstärkung
 
 ## Flüchtiger RAM
 
@@ -793,6 +861,12 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 
 - Signallaufzeit: Latenz
 - Abschwächung des Signals durch Störungen, Interferenz, elektrischer Widerstand (Google: Leitungsdämpfung)
+
+## weitere Themen
+
+- Knotenpunktregel, Maschenregel (Kirchhoff)
+- Spannungsrichtig, Stromrichtig messen
+- $R=U/I$
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -864,7 +938,20 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 - worst case: $O(N log N)$
 - best = worst (immer optimale Teilung)
 
+## Binärbaum
+
+> Was soll man groß dazu sagen
+
+- Ein Elternknoten hat max. zwei Kindknoten
+
+## Einfach verkettete Liste
+
+- Dynamische Infrastuktur zur geordneten Speicherung von Datenelementen
+- Anzahl kann während Laufzeit beliebig variieren
+
 ## Verschlüsselung
+
+> Wurde bei PI20 eher in IT-Trends behandelt
 
 ### Schutzziele
 
@@ -934,6 +1021,13 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 >   - Tiefen/Breitensuche; Adjazenzmatrix aufstellen können
 
 - Siehe: [Algo Cheatsheet](https://github.com/importPI19fromDHGE/dhge-pi19-sem2/blob/master/ALGO/ALGO-Cheatsheet.pdf)
+
+## Struktogramm
+
+- Dokumentieren von Algorithmen unabhängig von Programmiersprache
+- Genormt nach DIN 66261 [Wir sind hier schließlich in Deutschland]
+- Erfolgt mittels einfacher Formen, hauptsächlich Rechteck
+- Hilfreicher Zwischenschritt von Problem zu Programm
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -1057,6 +1151,8 @@ Einteilung von Grammatiken in vier Klassen:
 ----------------------------------------------------------------------------------------------------------------------
 
 # Betriebssysteme
+
+> Hinweis von PI20: Wir haben das aufgrund der Gestaltungsweise der Vorlesung mittels Studentenvorträge evtl. nicht ausführlich genug behandelt. Es folgen hauptsächlich Themen von PI19, die man auf jeden Fall sich anschauen sollte.
 
 ## Definition Betriebssystem
 
@@ -1309,24 +1405,56 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 - Hot Backup $\rightarrow$ wird im laufenden Betrieb erstellt
 - Cold Backup $\rightarrow$ wird im ausgeschalteten Zustand erstellt (konsistenter Zustand wird gesichert)
 
+## Parallelisierung
+
+- mehrere Recheneinheiten arbeiten parallel
+- Beschleunigen von Berechnungen
+- Erfüllung großer Speicheranforderungen
+- Höherer Durchsatz
+
 # Rechnernetze
+
+## Grundlegende Themen
+
+- Netzwerktopologien
+- Token Ring
+- Netzwerkprotokolle
+- IP-Routing
+- 3-Wege-Handshake
+- DNS, DHCP
+- ISO/OSI
+- Client Server
+- UDP/TCP
 
 ## ISO/OSI-Referenzmodell und TCP/IP
 
 | Schicht                | Funktion                                                     | Protokolle | TCP/IP                          |
 | ---------------------- | ------------------------------------------------------------ | ---------- | ------------------------------- |
 | Anwendungsschicht      | Kommunikation zw. Anwendungen                                | NFS, DNS,  | Anwendungungsschicht            |
-| Darstellungsschicht    | Transformation zw. Datenformaten, Verschlüsselung            | DHCP, HTTP | Anwendungungsschicht            |
-| Sitzungsschicht        | Dialogsteuerung, Synchronisation                             | FTP, ...   | Anwendungungsschicht            |
+| Darstellungsschicht    | Transformation zw. Datenformaten, Verschlüsselung            |            | Anwendungungsschicht            |
+| Sitzungsschicht        | Dialogsteuerung, Synchronisation                             |            | Anwendungungsschicht            |
 | Transportschicht       | Ende-zu-Ende-Kommunikation zw. Prozessen                     | TCP, UDP   | Transportschicht                |
 | Vermittlungsschicht    | Wegewahl Sender -> Empfänger, Kopplung heterogener Teilnetze | IP         | Internetschicht                 |
 | Sicherungsschicht      | Behandlung von Übertragungsfehlern                           | Ethernet   | Netzzugangsschicht (Link Layer) |
 | Bitübertragungsschicht | physikalische Ebene -> Übertragung von Signalen              |            | Netzzugangsschicht (Link Layer) |
 
-- Protokolle der oberen 3 Schichten nicht eins zu eins zuordenbar
+- Protokolle der oberen 3 Schichten nicht eins zu eins zuordbar
+- Normalerweise in ein Protokoll vereint
 
 - Protokoll = Regeln zur Steuerung der Kommunikation
 - Dienst = durch Sicht erbrachte Funktionalität
+
+## Verbindungstypen
+
+|Verbindungsorientiert|Verbindungslos|
+|---------------------|--------------|
+|- Beziehung zwischen Sender und Empfänger|-Keine Information über Existenz einer Beziehung|
+|- Gegenseitiges Wissen über Beziehung|-Kommunikation kann ohne Verbindungsaufbau begonnen werden|
+
+|Leistungsvermittelt|Paketvermittelt|
+|-------------------|---------------|
+|- Fest zwischen Sender und Empfänger durchgeschaltet|- Leitungen werden gemeinsam genutzt|
+|- Ermöglicht Zusicherung von Quality of Service|-Daten werden in Pakete aufgeteilt, die Informationen über Zuordnung des Empfängers bereithalten|
 
 ## Netzwerktopologien
 

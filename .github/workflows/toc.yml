@@ -1,8 +1,6 @@
 on:
-  pull_request:
-    branches:
-      - main
-  workflow_dispatch:
+    workflow_dispatch:
+  
       
 name: TOC Generator
 jobs:

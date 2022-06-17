@@ -90,6 +90,7 @@ MPP1 - Themenkatalog
   - [Digitale Signatur](#digitale-signatur)
   - [Stack und Queue](#stack-und-queue)
   - [Graphen](#graphen)
+  - [Struktogramm](#struktogramm)
 - [Automaten und Sprachen](#automaten-und-sprachen)
   - [Reguläre Ausdrücke](#reguläre-ausdrücke)
   - [Grammatiken](#grammatiken)
@@ -1018,6 +1019,13 @@ Diodenkennlinie:
 >   - Tiefen/Breitensuche; Adjazenzmatrix aufstellen können
 
 - Siehe: [Algo Cheatsheet](https://github.com/importPI19fromDHGE/dhge-pi19-sem2/blob/master/ALGO/ALGO-Cheatsheet.pdf)
+
+## Struktogramm
+
+- Dokumentieren von Algorithmen unabhängig von Programmiersprache
+- Genormt nach DIN 66261 [Wir sind hier schließlich in Deutschland]
+- Erfolgt mittels einfacher Formen, hauptsächlich Rechteck
+- Hilfreicher Zwischenschritt von Problem zu Programm
 
 ----------------------------------------------------------------------------------------------------------------------
 

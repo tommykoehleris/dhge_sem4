@@ -67,8 +67,9 @@ MPP1 - Themenkatalog
     - [Ohmscher Widerstand](#ohmscher-widerstand)
     - [Diode](#diode)
     - [Transistor](#transistor)
-    - [CMOS](#cmos)
-    - [Spule](#spule)
+      - [CMOS](#cmos)
+      - [Spule](#spule)
+      - [Schaltungstypen](#schaltungstypen)
   - [Flüchtiger RAM](#flüchtiger-ram)
   - [Signalübertragung Kabel](#signalübertragung-kabel)
 - [Algorithmen und Datenstrukturen](#algorithmen-und-datenstrukturen)
@@ -819,18 +820,24 @@ Diodenkennlinie:
 - Anwendung: Verstärker, Schalter
 - Betriebsarten: Inversbetrieb, Normalbetrieb, Sperrbetrieb, Sättigungsbetrieb
 
-### CMOS
+#### CMOS
 
 - Halbleiterbauelement
 - Funktioniert durch Wechselspiel zweier Transistoren
   - n-Kanal-Mosfet
   - p-Kanal-Mosfet
 
-### Spule
+#### Spule
 
 - Transformation von Spannungen
 - erzeugen Magnetfelder / Induktivität
 - Anwendungen: Relais, Störfilter
+
+#### Schaltungstypen
+
+- Basiskonfiguration: hat Spannungsverstärkung aber keine Stromverstärkung
+- Ermitterschaltung: hat Strom- und Spannungsverstärkung
+- Kollektorshaltung: hat Stromverstärkung aber keine Spannungsverstärkung
 
 ## Flüchtiger RAM
 

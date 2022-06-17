@@ -63,6 +63,12 @@ MPP1 - Themenkatalog
 - [Elektrotechnik](#elektrotechnik)
   - [Grundlegende Inhalte](#grundlegende-inhalte)
   - [Grundlegende elektrische Bauteile](#grundlegende-elektrische-bauteile)
+    - [Kondensator](#kondensator)
+    - [Ohmscher Widerstand](#ohmscher-widerstand)
+    - [Diode](#diode)
+    - [Transistor](#transistor)
+    - [CMOS](#cmos)
+    - [Spule](#spule)
   - [Flüchtiger RAM](#flüchtiger-ram)
   - [Signalübertragung Kabel](#signalübertragung-kabel)
 - [Algorithmen und Datenstrukturen](#algorithmen-und-datenstrukturen)
@@ -780,19 +786,19 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 
 ## Grundlegende elektrische Bauteile
 
-**Kondensator**
+### Kondensator
 
 - Speichern von elektrischen Ladungen
 - Anwendung: Glättungskondensatoren, Datenspeicherung im flüchtigen Speicher
 
-**Ohmscher Widerstand**
+### Ohmscher Widerstand
 
 - begrenzt den Strom
 - Spannung ändert sich anhand des Ohmschen Gesetzes
 - Ohmsches Gesetz:$R=\frac{U}{I}$
 - Anwendung: Vorwiderstand, Spannungsteiler
 
-**Diode**
+### Diode
 
 - Halbleiterelement
 - sperrt in Abhängigkeit von Stromrichtung
@@ -805,7 +811,7 @@ Diodenkennlinie:
 
 ![Diodenkennlinie](./assets/diodenkennlinie.gif)
 
-**Transistor**
+### Transistor
 
 - Halbleiterelement
 - besteht aus: Kollektor, Emitter und Basis
@@ -813,14 +819,14 @@ Diodenkennlinie:
 - Anwendung: Verstärker, Schalter
 - Betriebsarten: Inversbetrieb, Normalbetrieb, Sperrbetrieb, Sättigungsbetrieb
 
-**CMOS**
+### CMOS
 
 - Halbleiterbauelement
 - Funktioniert durch Wechselspiel zweier Transistoren
   - n-Kanal-Mosfet
   - p-Kanal-Mosfet
 
-**Spule**
+### Spule
 
 - Transformation von Spannungen
 - erzeugen Magnetfelder / Induktivität

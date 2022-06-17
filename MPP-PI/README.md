@@ -82,6 +82,7 @@ MPP1 - Themenkatalog
     - [Quick-Sort](#quick-sort)
     - [Merge-Sort](#merge-sort)
   - [Binärbaum](#binärbaum)
+  - [Einfach verkettete Liste](#einfach-verkettete-liste)
   - [Verschlüsselung](#verschlüsselung)
     - [Schutzziele](#schutzziele)
     - [symmetrisch vs. asymmetrisch](#symmetrisch-vs-asymmetrisch)
@@ -939,6 +940,11 @@ Diodenkennlinie:
 > Was soll man groß dazu sagen
 
 - Ein Elternknoten hat max. zwei Kindknoten
+
+## Einfach verkettete Liste
+
+- Dynamische Infrastuktur zur geordneten Speicherung von Datenelementen
+- Anzahl kann während Laufzeit beliebig variieren
 
 ## Verschlüsselung
 

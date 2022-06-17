@@ -935,6 +935,8 @@ Diodenkennlinie:
 
 ## Verschlüsselung
 
+> Wurde bei PI20 eher in IT-Trends behandelt
+
 ### Schutzziele
 
 - Klartext *so* transformieren, dass originale Informationen nicht mehr lesbar sind

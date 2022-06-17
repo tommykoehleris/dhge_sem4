@@ -72,6 +72,7 @@ MPP1 - Themenkatalog
       - [Schaltungstypen](#schaltungstypen)
   - [Flüchtiger RAM](#flüchtiger-ram)
   - [Signalübertragung Kabel](#signalübertragung-kabel)
+  - [weitere Themen](#weitere-themen)
 - [Algorithmen und Datenstrukturen](#algorithmen-und-datenstrukturen)
   - [Eigenschaften von Algorithmen](#eigenschaften-von-algorithmen)
   - [Sortieralgorithmen](#sortieralgorithmen)
@@ -855,6 +856,12 @@ Diodenkennlinie:
 
 - Signallaufzeit: Latenz
 - Abschwächung des Signals durch Störungen, Interferenz, elektrischer Widerstand (Google: Leitungsdämpfung)
+
+## weitere Themen
+
+- Knotenpunktregel, Maschenregel (Kirchhoff)
+- Spannungsrichtig, Stromrichtig messen
+- $R=U/I$
 
 ----------------------------------------------------------------------------------------------------------------------
 

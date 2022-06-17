@@ -12,7 +12,8 @@ MPP1 - Themenkatalog
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Präambel](#pr%C3%A4ambel)
+- [MPP1 - Themenkatalog](#mpp1---themenkatalog)
+- [Präambel](#präambel)
   - [Most Important Topics](#most-important-topics)
 - [Grundlagen der Informationsverarbeitung](#grundlagen-der-informationsverarbeitung)
   - [Grundbegriffe zum eventuellen Wiederholen](#grundbegriffe-zum-eventuellen-wiederholen)
@@ -23,13 +24,13 @@ MPP1 - Themenkatalog
     - [Problemorientierte Programmiersprachen](#problemorientierte-programmiersprachen)
     - [Maschinenorientierte Programmiersprachen](#maschinenorientierte-programmiersprachen)
   - [`Call by Value` vs. `Call by Reference`](#call-by-value-vs-call-by-reference)
-  - [Unterschied Java, JavaScript, C&#035;, C++](#unterschied-java-javascript-c-c)
+  - [Unterschied Java, JavaScript, C#, C++](#unterschied-java-javascript-c-c)
   - [Statisches vs. dynamisches Linking](#statisches-vs-dynamisches-linking)
   - [Gleitpunktverfahren](#gleitpunktverfahren)
   - [Umrechnen von Zahlensystemen](#umrechnen-von-zahlensystemen)
     - [Dezimal zu X](#dezimal-zu-x)
     - [X zu Dezimal](#x-zu-dezimal)
-  - [Datenträgerverwaltung](#datentr%C3%A4gerverwaltung)
+  - [Datenträgerverwaltung](#datenträgerverwaltung)
     - [Datenverwaltung](#datenverwaltung)
     - [Organisation von Dateien](#organisation-von-dateien)
 - [Digitaltechnik](#digitaltechnik)
@@ -69,8 +70,8 @@ MPP1 - Themenkatalog
       - [CMOS](#cmos)
       - [Spule](#spule)
       - [Schaltungstypen](#schaltungstypen)
-  - [Flüchtiger RAM](#fl%C3%BCchtiger-ram)
-  - [Signalübertragung Kabel](#signal%C3%BCbertragung-kabel)
+  - [Flüchtiger RAM](#flüchtiger-ram)
+  - [Signalübertragung Kabel](#signalübertragung-kabel)
   - [weitere Themen](#weitere-themen)
 - [Algorithmen und Datenstrukturen](#algorithmen-und-datenstrukturen)
   - [Eigenschaften von Algorithmen](#eigenschaften-von-algorithmen)
@@ -80,9 +81,9 @@ MPP1 - Themenkatalog
     - [Insertion-Sort](#insertion-sort)
     - [Quick-Sort](#quick-sort)
     - [Merge-Sort](#merge-sort)
-  - [Binärbaum](#bin%C3%A4rbaum)
+  - [Binärbaum](#binärbaum)
   - [Einfach verkettete Liste](#einfach-verkettete-liste)
-  - [Verschlüsselung](#verschl%C3%BCsselung)
+  - [Verschlüsselung](#verschlüsselung)
     - [Schutzziele](#schutzziele)
     - [symmetrisch vs. asymmetrisch](#symmetrisch-vs-asymmetrisch)
   - [Hashing](#hashing)
@@ -91,7 +92,7 @@ MPP1 - Themenkatalog
   - [Graphen](#graphen)
   - [Struktogramm](#struktogramm)
 - [Automaten und Sprachen](#automaten-und-sprachen)
-  - [Reguläre Ausdrücke](#regul%C3%A4re-ausdr%C3%BCcke)
+  - [Reguläre Ausdrücke](#reguläre-ausdrücke)
   - [Grammatiken](#grammatiken)
   - [Turing-Maschine](#turing-maschine)
   - [Registermaschinen](#registermaschinen)
@@ -102,15 +103,15 @@ MPP1 - Themenkatalog
   - [Klassifizierung von Betriebssystemen](#klassifizierung-von-betriebssystemen)
   - [Betriebsmittel](#betriebsmittel)
   - [Thread/Prozess/Task](#threadprozesstask)
-  - [Parallelität und Nebenläufigkeit](#parallelit%C3%A4t-und-nebenl%C3%A4ufigkeit)
+  - [Parallelität und Nebenläufigkeit](#parallelität-und-nebenläufigkeit)
   - [Dateisysteme](#dateisysteme)
   - [Virtueller Speicher](#virtueller-speicher)
   - [Cache](#cache)
   - [Speicherzuweisungsstrategien](#speicherzuweisungsstrategien)
   - [Seitenersetzungsstrategien](#seitenersetzungsstrategien)
-  - [Scheduling-Strategien für Prozesse](#scheduling-strategien-f%C3%BCr-prozesse)
+  - [Scheduling-Strategien für Prozesse](#scheduling-strategien-für-prozesse)
   - [Adressierungsarten](#adressierungsarten)
-  - [Serielle vs. Parallele Datenübertragung](#serielle-vs-parallele-daten%C3%BCbertragung)
+  - [Serielle vs. Parallele Datenübertragung](#serielle-vs-parallele-datenübertragung)
   - [Interrupts](#interrupts)
   - [Semaphore](#semaphore)
   - [Spooling](#spooling)
@@ -158,7 +159,7 @@ MPP1 - Themenkatalog
   - [Pipelining](#pipelining)
 - [IT-Trends](#it-trends)
   - [Cloud Computing](#cloud-computing)
-  - [Machine-Learning und Künstliche Intelligenz](#machine-learning-und-k%C3%BCnstliche-intelligenz)
+  - [Machine-Learning und Künstliche Intelligenz](#machine-learning-und-künstliche-intelligenz)
   - [Internet of Things (IoT)](#internet-of-things-iot)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -1148,6 +1149,8 @@ Einteilung von Grammatiken in vier Klassen:
 ----------------------------------------------------------------------------------------------------------------------
 
 # Betriebssysteme
+
+> Hinweis von PI20: Wir haben das aufgrund der Gestaltungsweise der Vorlesung mittels Studentenvorträge evtl. nicht ausführlich genug behandelt. Es folgen hauptsächlich Themen von PI19, die man auf jeden Fall sich anschauen sollte.
 
 ## Definition Betriebssystem
 

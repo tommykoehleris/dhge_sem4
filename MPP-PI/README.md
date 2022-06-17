@@ -121,6 +121,7 @@ MPP1 - Themenkatalog
   - [Datensicherung](#datensicherung)
   - [Parallelisierung](#parallelisierung)
 - [Rechnernetze](#rechnernetze)
+  - [Grundlegende Themen](#grundlegende-themen)
   - [ISO/OSI-Referenzmodell und TCP/IP](#isoosi-referenzmodell-und-tcpip)
   - [Netzwerktopologien](#netzwerktopologien)
   - [IP und Routing](#ip-und-routing)
@@ -1412,6 +1413,18 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 - Höherer Durchsatz
 
 # Rechnernetze
+
+## Grundlegende Themen
+
+- Netzwerktopologien
+- Token Ring
+- Netzwerkprotokolle
+- IP-Routing
+- 3-Wege-Handshake
+- DNS, DHCP
+- ISO/OSI
+- Client Server
+- UDP/TCP
 
 ## ISO/OSI-Referenzmodell und TCP/IP
 

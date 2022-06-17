@@ -81,6 +81,7 @@ MPP1 - Themenkatalog
     - [Insertion-Sort](#insertion-sort)
     - [Quick-Sort](#quick-sort)
     - [Merge-Sort](#merge-sort)
+  - [Binärbaum](#binärbaum)
   - [Verschlüsselung](#verschlüsselung)
     - [Schutzziele](#schutzziele)
     - [symmetrisch vs. asymmetrisch](#symmetrisch-vs-asymmetrisch)
@@ -932,6 +933,12 @@ Diodenkennlinie:
 - ex situ, stabiles Verfahren
 - worst case: $O(N log N)$
 - best = worst (immer optimale Teilung)
+
+## Binärbaum
+
+> Was soll man groß dazu sagen
+
+- Ein Elternknoten hat max. zwei Kindknoten
 
 ## Verschlüsselung
 

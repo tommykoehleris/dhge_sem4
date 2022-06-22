@@ -99,8 +99,7 @@ Sammlung von in der MPP 1 gestelten Fragen der höheren Semester (PI15, PI17, PI
 
 - Was ist IaaS, Paas, SaaS?
 - ERD zu einem Thema zeichnen (auch rekursiv)
-- Entität mittels „Create Table“ ->
-Primary Key
+- Entität mittels „Create Table“ -> Primary Key
 - UML Klassendiagramm und Beziehungen darstellen und Polymorophy erklären
 - Stromkreis abzeichnen, Ohm’sches Gesetz
 - Paketkollision, insb. CSMA/CD im TCP/IP Kontext
@@ -111,8 +110,7 @@ Primary Key
 - ACID
 - OOP-Säulen
 - Call by Value, Call by Reference in C und C++
-- Digitaltechnik: Konjunktion, Disjunktion, Möglichkeiten zur Vereinfachung, Boolesche
-Algebra, KV
+- Digitaltechnik: Konjunktion, Disjunktion, Möglichkeiten zur Vereinfachung, Boolesche Algebra, KV
 - BUS-Arten: Seriell, Parallel, Vor- und Nachteile
 - GAIA-X-Fundament (Datensouveränität, etc.)
 - Java vs. C
@@ -128,8 +126,7 @@ Algebra, KV
 - CISC und RISC
 - Rechnerarchitektur
 - Client Server
-- Welche Softwarearchitektur-Modell könnte eine Webanwendungen, mit allen
-Komponenten darstellen
+- Welche Softwarearchitektur-Modell könnte eine Webanwendungen, mit allen Komponenten darstellen
 - Einordnung Programmiersprachen
 - Vorgehensmodelle (schwergewichtig, agile)
 
@@ -151,11 +148,9 @@ Komponenten darstellen
 - Suchen in der Liste
 - Landau Notation
 - Warum Cloud?
-- Was ist XML? XML-Validität und Wohlgeformtheit, XML-Schema, XML Tag-basiert und
-Inhalts-basiert
+- Was ist XML? XML-Validität und Wohlgeformtheit, XML-Schema, XML Tag-basiert und Inhalts-basiert
 - Vorstellung Xtreme Programmierung
-- binärer Baum, den in Klassen einer objektorientierten Sprache einleiten und
-anschließend darstellen (UML)
+- binärer Baum, den in Klassen einer objektorientierten Sprache einleiten und anschließend darstellen (UML)
 - agile Entwicklungsmethoden
 - MVP
 - XML und JSON
@@ -178,8 +173,7 @@ anschließend darstellen (UML)
 - Dioden Kennlinie/ Dioden/ Dioden-Diagramm
 - Vorwiderstand berechnen
 - ISO/OSI
-- Bitübertragungs- und Leitungsorientierte Übertragung zeichnen und
-erläutern
+- Bitübertragungs- und Leitungsorientierte Übertragung zeichnen und erläutern
 - Hub, Switch, Router einordnen
 - UDP/TCP
 - IPv4 vs. IPv6
@@ -188,8 +182,7 @@ erläutern
 - ICMP bei IPv6
 - HTTP Rest API
 - Protokolle Anwendungsschicht nennen
-- Was ist ein Hash? + Hash-Eigenschaften + welche mathematischen Funktionen werden
-dabei verwendet + Einsatz Hashfunktion
+- Was ist ein Hash? + Hash-Eigenschaften + welche mathematischen Funktionen werden dabei verwendet + Einsatz Hashfunktion
 - De Morgansche Regel
 - XOR Wahrheitstabelle
 - private vs. public Cloud

@@ -56,7 +56,7 @@ jobs:
           args: --output=output/MPP-PI.pdf --resource-path=MPP-PI/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose MPP-PI/README.md
       - uses: docker://rstropek/pandoc-latex:latest # generate MPP-PI/Fragenkatalog-Vorgaenger.md
         with:
-          args: --output=output/MPP-PI.pdf --resource-path=MPP-PI/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose MPP-PI/Fragenkatalog-Vorgaenger.md
+          args: --output=output/MPP-Fragenkatalog-Vorgaenger.pdf --resource-path=MPP-PI/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose MPP-PI/Fragenkatalog-Vorgaenger.md
       - uses: actions/upload-artifact@master # upload pdfs as an artifact
         with:
           name: output

@@ -1,8 +1,8 @@
-# Fragenkatalog MPP1  vor PI20
+# Fragenkatalog MPP1 vor PI20
 
 Sammlung von in der MPP 1 gestelten Fragen der höheren Semester (PI15, PI17, PI19).
 
-- [Fragenkatalog MPP1  vor PI20](#fragenkatalog-mpp1--vor-pi20)
+- [Fragenkatalog MPP1 vor PI20](#fragenkatalog-mpp1-vor-pi20)
   - [Allgemeine Fragen](#allgemeine-fragen)
   - [Fragen der Praxispartner](#fragen-der-praxispartner)
   - [Fragen der Dozenten](#fragen-der-dozenten)

@@ -11,33 +11,41 @@ Datenbankentwurf
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Überblick über den Datenbankentwurfsprozess](#%C3%9Cberblick-%C3%BCber-den-datenbankentwurfsprozess)
+- [Datenbankentwurf](#datenbankentwurf)
   - [Entwicklung von Datenbankschemata](#entwicklung-von-datenbankschemata)
+- [Überblick über den Datenbankentwurfsprozess](#überblick-über-den-datenbankentwurfsprozess)
+  - [Entwicklung von Datenbankschemata](#entwicklung-von-datenbankschemata-1)
   - [Phasen des Entwurfprozesses](#phasen-des-entwurfprozesses)
   - [Ableitung des Datenbankschemas aus einer verbalen Spezifikation](#ableitung-des-datenbankschemas-aus-einer-verbalen-spezifikation)
 - [Logischer Datenbankentwurf](#logischer-datenbankentwurf)
   - [Entity-Relationship-Modell](#entity-relationship-modell)
     - [Komponenten von ERDs](#komponenten-von-erds)
-    - [Regeln für die Ableitung eines relationalen Schemas](#regeln-f%C3%BCr-die-ableitung-eines-relationalen-schemas)
-  - [Normalformen für relationale Datenbanken](#normalformen-f%C3%BCr-relationale-datenbanken)
+    - [Regeln für die Ableitung eines relationalen Schemas](#regeln-für-die-ableitung-eines-relationalen-schemas)
+  - [Normalformen für relationale Datenbanken](#normalformen-für-relationale-datenbanken)
     - [1. Normalform](#1-normalform)
     - [2. Normalform](#2-normalform)
     - [3. Normalform](#3-normalform)
-    - [Allgemeine Design-Regeln für den Entwurf relationaler Datenbankschemata](#allgemeine-design-regeln-f%C3%BCr-den-entwurf-relationaler-datenbankschemata)
-- [Sicherung von Konsistenz und Integrität](#sicherung-von-konsistenz-und-integrit%C3%A4t)
-  - [Integritätsbedingungen](#integrit%C3%A4tsbedingungen)
+    - [Allgemeine Design-Regeln für den Entwurf relationaler Datenbankschemata](#allgemeine-design-regeln-für-den-entwurf-relationaler-datenbankschemata)
+- [Sicherung von Konsistenz und Integrität](#sicherung-von-konsistenz-und-integrität)
+  - [Integritätsbedingungen](#integritätsbedingungen)
   - [Transaktionen](#transaktionen)
-    - [Atomarität](#atomarit%C3%A4t)
+    - [Atomarität](#atomarität)
       - [Transaktionstypen](#transaktionstypen)
     - [Isolation/Abkapselung](#isolationabkapselung)
     - [Dauerhaftigkeit](#dauerhaftigkeit)
   - [Recovery-Verfahren](#recovery-verfahren)
     - [Aufbau eines Log-Eintrages](#aufbau-eines-log-eintrages)
-    - [Typen von Log-Einträgen](#typen-von-log-eintr%C3%A4gen)
+    - [Typen von Log-Einträgen](#typen-von-log-einträgen)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--newpage-->
+## Entwicklung von Datenbankschemata
+
+Wichtig für die Klausur:
+- vorgegeben ist ein Text mit unvollständigen Informationen nach welchem eine Datenbankmodellerierung durchgeführt werden soll
+- Rechte- / Rollenmanagement
+- Abfragen entsprechend beherrschen
 
 # Überblick über den Datenbankentwurfsprozess
 

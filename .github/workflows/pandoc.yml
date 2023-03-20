@@ -67,9 +67,9 @@ jobs:
         with:
           name: output
           path: output
-      - uses: meeDamian/github-release@2.0 # create/override a release and attach a pdf
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: meeDamian/github-release@2.0
+	      with:
+	        token: ${{ secrets.GITHUB_TOKEN }}
           tag: pdf-release
           name: PDFs
           body: Dieses Release wurde automatisch erstellt

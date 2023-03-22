@@ -11,31 +11,32 @@ Systementwurf
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Präambel](#pr%C3%A4ambel)
+- [Systementwurf](#systementwurf)
+- [Präambel](#präambel)
   - [Entwurf-Herangehensweise (Wiederholung System-Analyse)](#entwurf-herangehensweise-wiederholung-system-analyse)
-    - [Kostenschätzungen](#kostensch%C3%A4tzungen)
+    - [Kostenschätzungen](#kostenschätzungen)
   - [Entwicklungskonzepte](#entwicklungskonzepte)
 - [Entwicklungs-Konzepte](#entwicklungs-konzepte)
   - [Software-Entwurf](#software-entwurf)
   - [Gliederung des Entwurfsprozesses](#gliederung-des-entwurfsprozesses)
   - [Beispiel](#beispiel)
   - [Software Architektur](#software-architektur)
-  - [Kriterien für einen guten Entwurf](#kriterien-f%C3%BCr-einen-guten-entwurf)
+  - [Kriterien für einen guten Entwurf](#kriterien-für-einen-guten-entwurf)
   - [Software-Architekturen und deren Sichten](#software-architekturen-und-deren-sichten)
     - [Szenarien](#szenarien)
-    - [Architektur-Muster für strukturelle Sicht](#architektur-muster-f%C3%BCr-strukturelle-sicht)
+    - [Architektur-Muster für strukturelle Sicht](#architektur-muster-für-strukturelle-sicht)
     - [Architekturmuster der physikalischen Sicht](#architekturmuster-der-physikalischen-sicht)
     - [Architektur-Modelle der Ablauf-Sicht](#architektur-modelle-der-ablauf-sicht)
     - [Architektur-Muster der Logischen Sicht](#architektur-muster-der-logischen-sicht)
   - [Einflussfaktoren](#einflussfaktoren)
   - [Grundsatzentscheidungen](#grundsatzentscheidungen)
   - [Hauptaufgabe beim Entwurf einer (Software-)Architektur](#hauptaufgabe-beim-entwurf-einer-software-architektur)
-  - [Qualitätssicherung](#qualit%C3%A4tssicherung)
+  - [Qualitätssicherung](#qualitätssicherung)
   - [Ablauf](#ablauf)
-  - [Metriken für den Software-Architektur-Entwurf](#metriken-f%C3%BCr-den-software-architektur-entwurf)
-    - ["Metriken" für einen guten Entwurf](#metriken-f%C3%BCr-einen-guten-entwurf)
-    - [Metriken für einen modularen Entwurf](#metriken-f%C3%BCr-einen-modularen-entwurf)
-    - [Metriken für den Objekt-Orientierten Entwurf](#metriken-f%C3%BCr-den-objekt-orientierten-entwurf)
+  - [Metriken für den Software-Architektur-Entwurf](#metriken-für-den-software-architektur-entwurf)
+    - ["Metriken" für einen guten Entwurf](#metriken-für-einen-guten-entwurf)
+    - [Metriken für einen modularen Entwurf](#metriken-für-einen-modularen-entwurf)
+    - [Metriken für den Objekt-Orientierten Entwurf](#metriken-für-den-objekt-orientierten-entwurf)
 - [Objektorientierte Entwurfsmuster](#objektorientierte-entwurfsmuster)
   - [Erzeugende Entwurfsmuster](#erzeugende-entwurfsmuster)
   - [Strukturelle Muster](#strukturelle-muster)
@@ -54,8 +55,8 @@ Qualitäts-Verbesserung durch:
 
 - **Kompetenz der Entwickler**
 - **Prozess** (Testen -> *System-Analyse*)
-- **Tooling** (Automatisierung, Testen -> *System-Entwurf*)
-- **Wiederverwendung** (*System-Entwurf*)
+- **Tooling** (Automatisierung, Testen -> *System-Entwurf* -> Prozesse zur Lösungsfindung verbessern)
+- **Automatisierung** (*System-Entwurf*)
 
 ## Entwurf-Herangehensweise (Wiederholung System-Analyse)
 
@@ -63,7 +64,11 @@ Qualitäts-Verbesserung durch:
 - Schwergewichtige/klassische Modelle: Wasserfall, V-Modell, V-Modell XT
 - Agile Modelle: XP, SCRUM
 - MVP: **M**inimal **V**iable **P**roduct
+  - Minimal überlebensfähiges Produkt bauen
 - Story Board
+  - kann genutzt werden um beispielsweise zu organisieren, welche Features brauche ich um ein MVP 1 oder MVP 2 zu erhalten
+- EPICs
+- Backlogs
 
 > User Story Format ("Als ... möchte ich ... um ... zu erreichen")
 >
@@ -71,9 +76,17 @@ Qualitäts-Verbesserung durch:
 >
 > AGILE: "How to slice a cake"
 
+- Scrum Poker
+  
+  - = Jeder schätzt gleichzeitig -> keine Beeinflussung
+  - wer am meisten geschätzt redet mit dem am wenigsten geschätzt -> reden miteinander -> Wissenstransfer im Team
+  - nicht Stundenzahl geschätzt sondern Aufwand
+
 ### Kostenschätzungen
 
 - objektorientierte Sicht (OO-Sicht)
+  - Vererbung, Kapselung, Polymorphismus, Aggregation, Komposition
+  - Klassendarstellung
 - UML: strukturelle Ansichten, Verhaltensansichten
 
 ## Entwicklungskonzepte
@@ -98,12 +111,20 @@ Qualitäts-Verbesserung durch:
 
 ## Software-Entwurf
 
+Ablauf:
+
 - **WAS:** Anforderung $\rightarrow$ Analyse
-- **WIE:** Design, Umsetzung, Test, Auslieferung,  Wartung
-- Hauptaufgabe des System-Entwurfs: Zerlegung, Strukturierung, Komponenten in Beziehungen bringen (Voraussetzung: Anforderungen sind benannt)
-- Software-Architektur $\rightarrow$ Spezifikation von System-Komponenten
+- **WIE:** Design, Umsetzung, Test, Auslieferung,  Wartung 
+  - Vorgaben für die Implementierung
+
+> Wir befinden uns gerade am Übergang vom WAS zum WIE
+
+**Hauptaufgabe des System-Entwurfs** (Konzept zur Lösungsfindung/Erstellung von Entwürfen): Zerlegung, Strukturierung, Komponenten in Beziehungen bringen (Voraussetzung: Anforderungen sind benannt)
+
+$\rightarrow$ Ergebnis: Software-Architektur $\rightarrow$ Spezifikation von System-Komponenten
+
 - **Subsystem:** abgeschlossene, eigenständig funktionsfähige Einheit; definiert Schnittstellen; besteht wieder aus Komponenten
-- **Komponenten:** Bausteine für Software-System (Pakete $\rightarrow$ mehrere Klassen/Module)
+- **Komponenten:** Bausteine für Software-System (Pakete $\rightarrow$ Klassen/Module)
   - benutzt andere Komponenten
   - wird von anderen Komponenten benutzt
   - besteht aus Unterkomponenten
@@ -113,12 +134,12 @@ Qualitäts-Verbesserung durch:
 **Grobentwurf** (unabhängig von der Implementierungs-Sprache)
 
 - (1) Architektur-Entwurf
-- (2) Subsystem-Entwurf
-- (3) Schnittstellen-Entwurf
+- (2) Subsystem-Entwurf (innerhalb Architektur mehrere)
+- (3) Schnittstellen-Entwurf (zwischen den Subsystemen)
 
 **Feinentwurf**
 
-- (4) Komponenten
+- (4) Komponenten der einzelnen Subsysteme
 - (5) Datenstrukturen
 - (6) Algorithmen
 
@@ -299,14 +320,16 @@ $\rightarrow$ Abschätzung der Effizienz
 <!-- markdownlint-disable indentation -->
 
 1. Dinge sichtbar gemacht
+
   - Dokumentation
   - Kommunikation fördert
   - Verständnis wird erleichtert
-2. Wiedervewendung auf Entwurfsebene
-3. generische Lösung für ein Problem
-4. **nichtfunktionale Anforderungen *können* sichtbar werden**
-5. Wissen über gute Entwurfspraktiken wird gekapselt
-6. Corporate Identity
+
+1. Wiedervewendung auf Entwurfsebene
+2. generische Lösung für ein Problem
+3. **nichtfunktionale Anforderungen *können* sichtbar werden**
+4. Wissen über gute Entwurfspraktiken wird gekapselt
+5. Corporate Identity
 
 <!-- markdownlint-enable indentation -->
 
@@ -353,6 +376,7 @@ FAT Client
 - bedingt eigenfähig überlebensfähig
 
 >Übungs-Aufgabe:
+>
 >1. FAT-Clients (Multithreading)
 >2. Datenserver
 >3. MPI (Message Parsing Interface) soll möglich sein (wahlweise)
@@ -371,6 +395,7 @@ Mit Plantuml darstellen!
 - (als voll-vermaschtes Netz dargestellt)
 
 >Übungs-Aufgabe 2:
+>
 >- verschiedene Simulationsprogramme
 >- verschiedene CAD-Programme
 >- Schwing-Simulation, Thermo-Simulation

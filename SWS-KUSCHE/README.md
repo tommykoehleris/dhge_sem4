@@ -11,8 +11,9 @@ Kryptographie und Softwaresicherheit
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Prüfungen](#pr%C3%BCfungen)
-- [Einführung und Inhalt](#einf%C3%BChrung-und-inhalt)
+- [Kryptographie und Softwaresicherheit](#kryptographie-und-softwaresicherheit)
+- [Prüfungen](#prüfungen)
+- [Einführung und Inhalt](#einführung-und-inhalt)
 - [Symmetrische Verfahren](#symmetrische-verfahren)
 - [Asymmetrische Verfahren](#asymmetrische-verfahren)
   - [...SA vs ...DH](#sa-vs-dh)
@@ -20,14 +21,18 @@ Kryptographie und Softwaresicherheit
 - [Krypto-Analyse](#krypto-analyse)
 - [Anforderungen](#anforderungen)
   - [Anforderungen an Zukunft](#anforderungen-an-zukunft)
-- [Verschlüsselung langer Daten](#verschl%C3%BCsselung-langer-daten)
+- [Verschlüsselung langer Daten](#verschlüsselung-langer-daten)
   - [ECB (Electronic Code Book Mode)](#ecb-electronic-code-book-mode)
   - [CBC (Cipher Block Chaining Mode)](#cbc-cipher-block-chaining-mode)
   - [CFB (Cipher Feedback Mode)](#cfb-cipher-feedback-mode)
   - [CTR (Counter Mode)](#ctr-counter-mode)
   - [OFB (Output Feedback Mode)](#ofb-output-feedback-mode)
   - [GCM (Galois/Counter Mode)](#gcm-galoiscounter-mode)
-- [Hashes & Signatur](#hashes--signatur)
+  - [Anwendung Disk Encryption](#anwendung-disk-encryption)
+    - [Unterschied File Encyption](#unterschied-file-encyption)
+    - [Angriffe auf Disk-Encryption](#angriffe-auf-disk-encryption)
+    - [Was kann eine Disk-Encryption verschlüsseln?](#was-kann-eine-disk-encryption-verschlüsseln)
+- [Hashes \& Signatur](#hashes--signatur)
   - [Kollisionen](#kollisionen)
   - [Hash-Verfahren](#hash-verfahren)
   - [Anwendung](#anwendung)
@@ -35,14 +40,14 @@ Kryptographie und Softwaresicherheit
     - [Voraussetzungen](#voraussetzungen)
   - [Public-Key-Infrastruktur](#public-key-infrastruktur)
   - [Informationen in einem Zertifikat](#informationen-in-einem-zertifikat)
-  - [Überprüfung eines Zertifikates](#%C3%9Cberpr%C3%BCfung-eines-zertifikates)
+  - [Überprüfung eines Zertifikates](#überprüfung-eines-zertifikates)
   - [Aufgaben einer CA](#aufgaben-einer-ca)
   - [Sperrungen von Zertifikaten](#sperrungen-von-zertifikaten)
   - [Probleme beim CA-System](#probleme-beim-ca-system)
   - [Web of Trust](#web-of-trust)
 - [Anwendung: PGP, De-Mail](#anwendung-pgp-de-mail)
-  - [Email-Verschlüsselung](#email-verschl%C3%BCsselung)
-  - [Email-Authentizität](#email-authentizit%C3%A4t)
+  - [Email-Verschlüsselung](#email-verschlüsselung)
+  - [Email-Authentizität](#email-authentizität)
   - [PGP](#pgp)
     - [Probleme von PGP](#probleme-von-pgp)
   - [De-Mail](#de-mail)
@@ -60,15 +65,15 @@ Kryptographie und Softwaresicherheit
   - [Passwort setzen](#passwort-setzen)
 - [Programmierung](#programmierung)
 - [Mehr-Faktor-Authentifizierung](#mehr-faktor-authentifizierung)
-- [Authentifizierung über das Netz](#authentifizierung-%C3%BCber-das-netz)
+- [Authentifizierung über das Netz](#authentifizierung-über-das-netz)
   - [Zero-Knowledge-Protokoll](#zero-knowledge-protokoll)
 - [Steganographie](#steganographie)
 - [Disk Encryption](#disk-encryption)
   - [Unterschied zu File Encryption](#unterschied-zu-file-encryption)
-  - [Angriffe auf Disk Encryption](#angriffe-auf-disk-encryption)
-  - [Datenträger](#datentr%C3%A4ger)
+  - [Angriffe auf Disk Encryption](#angriffe-auf-disk-encryption-1)
+  - [Datenträger](#datenträger)
   - [Passwort-Eingabe](#passwort-eingabe)
-  - [Hardware-Verschlüsselung - Self-Encrypting Drive](#hardware-verschl%C3%BCsselung---self-encrypting-drive)
+  - [Hardware-Verschlüsselung - Self-Encrypting Drive](#hardware-verschlüsselung---self-encrypting-drive)
 - [TPM](#tpm)
   - [Angriffe](#angriffe)
   - [Der EK](#der-ek)
@@ -81,8 +86,8 @@ Kryptographie und Softwaresicherheit
   - [Triviale ID-Vergabe](#triviale-id-vergabe)
   - [Exzessive Rechte](#exzessive-rechte)
   - [File-Tricks](#file-tricks)
-  - [Krypto-Sünden (Ergänzung)](#krypto-s%C3%BCnden-erg%C3%A4nzung)
-  - [Gegenmaßnahmen allgemein](#gegenma%C3%9Fnahmen-allgemein)
+  - [Krypto-Sünden (Ergänzung)](#krypto-sünden-ergänzung)
+  - [Gegenmaßnahmen allgemein](#gegenmaßnahmen-allgemein)
   - [Fehlende Input-Filterung](#fehlende-input-filterung)
     - [SQL-Injection](#sql-injection)
     - [XPath-Injection](#xpath-injection)
@@ -93,8 +98,8 @@ Kryptographie und Softwaresicherheit
     - [Regular Expressions](#regular-expressions)
     - [XML](#xml)
     - [Allgemeine Behebung](#allgemeine-behebung)
-- [Speicherüberschreiber](#speicher%C3%BCberschreiber)
-  - [Gegenmaßnahmen Speicherüberschreiber](#gegenma%C3%9Fnahmen-speicher%C3%BCberschreiber)
+- [Speicherüberschreiber](#speicherüberschreiber)
+  - [Gegenmaßnahmen Speicherüberschreiber](#gegenmaßnahmen-speicherüberschreiber)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -237,6 +242,7 @@ Kryptographie und Softwaresicherheit
 # Verschlüsselung langer Daten
 
 - Problemstellung: wie bisherige Verfahren für lange Datenströme nutzen? (Blockchiffre zu Stromchiffre)
+> Folgene Techniken sind auch gut unter Wikipedia zu finden!
 
 ## ECB (Electronic Code Book Mode)
 
@@ -281,7 +287,7 @@ Kryptographie und Softwaresicherheit
 
 ## OFB (Output Feedback Mode)
 
-- s.o., aber statt Zähler wird Output verwendet
+- siehe CFB, aber statt Zähler wird Output verwendet
 
 ## GCM (Galois/Counter Mode)
 
@@ -293,9 +299,41 @@ Kryptographie und Softwaresicherheit
 
 ![GCM-Verschlüsselung](assets/gcm_encryption.png)<!--width=600px-->
 
+## Anwendung Disk Encryption
+
+- verhindert nur das Datenauslesen bei Diebstahl
+- solange ein Nutzer angemeldet ist ist diese verschlüsselt
+> gibt auch ein Standard für Festplatten-Verschlüsselung in sensiblen Branchen
+- sitzt normalerweise im Betriebssystem unterhalb des Filesystem
+- Verschlüsselung Partitionsweise
+- Filesystem unabhängig
+- Die Verschlüsselung sieht nur Disk-Blöcke, hat keine Ahnung von Files, Filesystemen und File-Metadaten
+- sobald das Disk-Passwort o.ä. eingegeben ist sind **alle** Daten entschlüsselt für **alle** Nutzer & Dienste
+
+### Unterschied File Encyption
+
+- verschlüsselt nur File-Inhalte aber nicht die Metadaten
+- normale Anwendung, keine Betriebssystemkomponente
+- wird explizit für einzelne Dateien aufgerufen
+
+### Angriffe auf Disk-Encryption
+
+- RAM enthält im laufenden Betrieb irgendwo den Schlüssel
+  - Zugriff auf das RAM über ext. Schnittstellen, z.B. Thunderbolt
+- RAM hält die Daten nach dem Abschalten für einige Minuten je nach Temperatur
+
+### Was kann eine Disk-Encryption verschlüsseln?
+
+- komplette Datenträger
+- "Logical Volumes" 
+  - Ein Filesystem
+  - Eine Partition
+  - Logische RAID-Laufwerke
+- "Hidden Volumes"
+  - eigenständige Filesysteme wie Container, welcher nicht in einem eigenen File sondern zwischen den Blöcken anderer gespeichert wird
 # Hashes & Signatur
 
-- bei Dateien, Mails: nur Unverfälschtheit
+- bei Dateien, Mails: nur Unverfälschtheit feststellbar
 - Hash + Signatur + Zertifikats-Infrastruktur: Unverfälschtheit, Authentizität, Vertrauenswürdigkeit, Nicht-Abstreitbarkeit
 - Hash = Prüfsumme, Fingerabdruck
 - oft fixe Länge und kürzer als Nachricht

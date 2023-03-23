@@ -27,7 +27,7 @@ Allgemeine Betriebswirtschaftslehre
   - [Gesellschaftliche Einordnung](#gesellschaftliche-einordnung)
   - [Rechtsformen](#rechtsformen)
   - [Marktbeurteilung](#marktbeurteilung)
-  - [Einflussfaktoren / PESTEL-Analyse](#einflussfaktoren--pestel-analyse)
+  - [äußere Einflussfaktoren / PESTEL-Analyse](#äußere-einflussfaktoren--pestel-analyse)
   - [Aufgaben eines Unternehmens](#aufgaben-eines-unternehmens)
   - [Leitbild eines Unternehmens](#leitbild-eines-unternehmens)
     - [Kurzfristige Auffassungen (operativ)](#kurzfristige-auffassungen-operativ)
@@ -332,7 +332,7 @@ Diese werden (nicht komplett) im Folgenden aufgeführt:
 
 Bei der Betrachtung eines Unternehmens ist es unumgänglich, die externen Einflussfaktoren zu betrachten, da ein Unternehmen nicht im "luftleeren Raum" existiert.
 
-
+![Einflussfaktoren](assets/einflussfaktoren.png)<!--height=200px-->
 
 Dazu können die PESTEL-Faktoren einbezogen werden.
 

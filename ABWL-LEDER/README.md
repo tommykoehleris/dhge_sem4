@@ -11,13 +11,18 @@ Allgemeine Betriebswirtschaftslehre
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Unternehmensführung - Produktionsfaktoren, betriebliche Funktionsbereiche](#unternehmensf%C3%BChrung---produktionsfaktoren-betriebliche-funktionsbereiche)
+- [Allgemeine Betriebswirtschaftslehre](#allgemeine-betriebswirtschaftslehre)
+- [Unternehmensführung - Produktionsfaktoren, betriebliche Funktionsbereiche](#unternehmensführung---produktionsfaktoren-betriebliche-funktionsbereiche)
   - [Begriffe](#begriffe)
-  - [grundlegende Merkmale](#grundlegende-merkmale)
+    - [grundlegende Merkmale](#grundlegende-merkmale)
+    - [Unternehmen](#unternehmen)
+      - [Merkmale des Unternehmens](#merkmale-des-unternehmens)
+      - [Wirtschaftliches System:](#wirtschaftliches-system)
+      - [Gesellschaftliche Verantwortung:](#gesellschaftliche-verantwortung)
+    - [Arbeitsmarkt](#arbeitsmarkt)
     - [erwerbswirtschaftliches Prinzip](#erwerbswirtschaftliches-prinzip)
     - [Prinzip der Autonomie](#prinzip-der-autonomie)
     - [Prinzip des Privateigentums](#prinzip-des-privateigentums)
-    - [(weitere) Merkmale eines Unternehmens](#weitere-merkmale-eines-unternehmens)
   - [Wirtschaftliches System - Nachhaltigkeit](#wirtschaftliches-system---nachhaltigkeit)
   - [Gesellschaftliche Einordnung](#gesellschaftliche-einordnung)
   - [Rechtsformen](#rechtsformen)
@@ -28,7 +33,7 @@ Allgemeine Betriebswirtschaftslehre
     - [Kurzfristige Auffassungen (operativ)](#kurzfristige-auffassungen-operativ)
   - [Management](#management)
     - [Management-Kreislauf](#management-kreislauf)
-    - [Führung und Leitung](#f%C3%BChrung-und-leitung)
+    - [Führung und Leitung](#führung-und-leitung)
     - [PDCA](#pdca)
 - [Aufbau von Organisationen](#aufbau-von-organisationen)
   - [Begrifflichkeiten](#begrifflichkeiten)
@@ -39,7 +44,7 @@ Allgemeine Betriebswirtschaftslehre
   - [Erarbeitung der Aufbauorganisation](#erarbeitung-der-aufbauorganisation)
     - [Aufgabenanalyse](#aufgabenanalyse)
     - [Aufgabensynthese](#aufgabensynthese)
-  - [Möglichkeiten der Führungshierarchie](#m%C3%B6glichkeiten-der-f%C3%BChrungshierarchie)
+  - [Möglichkeiten der Führungshierarchie](#möglichkeiten-der-führungshierarchie)
   - [Instrumente der Aufbauorganisation](#instrumente-der-aufbauorganisation)
     - [Organigramm](#organigramm)
     - [Stellenbeschreibung](#stellenbeschreibung)
@@ -56,13 +61,13 @@ Allgemeine Betriebswirtschaftslehre
       - [Einliniensystem](#einliniensystem)
       - [Mehrliniensystem](#mehrliniensystem)
       - [Sonderform Stabsliniensystem](#sonderform-stabsliniensystem)
-    - [Organisationsformen (Primärorganisation)](#organisationsformen-prim%C3%A4rorganisation)
+    - [Organisationsformen (Primärorganisation)](#organisationsformen-primärorganisation)
       - [Sektoral-Organisation](#sektoral-organisation)
       - [Funktional-Organisation](#funktional-organisation)
       - [Sparten-Organisation](#sparten-organisation)
       - [Matrix-Organisation](#matrix-organisation)
       - [Tensor-Organisation](#tensor-organisation)
-    - [Organisationsformen (Sekundärorganisation)](#organisationsformen-sekund%C3%A4rorganisation)
+    - [Organisationsformen (Sekundärorganisation)](#organisationsformen-sekundärorganisation)
       - [Center-Organsiation](#center-organsiation)
 - [Personalplanung, -Bedarf, -Deckung, -Entwicklung](#personalplanung--bedarf--deckung--entwicklung)
   - [Qualitative und quantitative Personalplanung](#qualitative-und-quantitative-personalplanung)
@@ -71,13 +76,13 @@ Allgemeine Betriebswirtschaftslehre
     - [Einordnung](#einordnung)
     - [Verfahren der Personalplanung](#verfahren-der-personalplanung)
       - [Faustformel REFA](#faustformel-refa)
-      - [Vorwärtskalkulation](#vorw%C3%A4rtskalkulation)
-      - [Rückwärtskalkulation](#r%C3%BCckw%C3%A4rtskalkulation)
+      - [Vorwärtskalkulation](#vorwärtskalkulation)
+      - [Rückwärtskalkulation](#rückwärtskalkulation)
       - [vergangenheitsorientierte Methoden](#vergangenheitsorientierte-methoden)
     - [Quantitative Planung](#quantitative-planung)
     - [Stellenplanmethode](#stellenplanmethode)
     - [Kennzahlmethode](#kennzahlmethode)
-    - [Schätzmethode](#sch%C3%A4tzmethode)
+    - [Schätzmethode](#schätzmethode)
     - [Methods-Time-Measurement-Analysis](#methods-time-measurement-analysis)
     - [REFA](#refa)
     - [Qualitative Personalplanung](#qualitative-personalplanung)
@@ -85,7 +90,7 @@ Allgemeine Betriebswirtschaftslehre
     - [Mitarbeitermarketing](#mitarbeitermarketing)
 - [Externes Rechnungswesen](#externes-rechnungswesen)
   - [Nennen Sie Ziele der Kennzahlen im externen Rechnungswesen](#nennen-sie-ziele-der-kennzahlen-im-externen-rechnungswesen)
-  - [Welche Kriterien müssen die Kennzahlen im externen Rechnungswesen erfüllen?](#welche-kriterien-m%C3%BCssen-die-kennzahlen-im-externen-rechnungswesen-erf%C3%BCllen)
+  - [Welche Kriterien müssen die Kennzahlen im externen Rechnungswesen erfüllen?](#welche-kriterien-müssen-die-kennzahlen-im-externen-rechnungswesen-erfüllen)
   - [Funktionen des externen Rechnungswesens](#funktionen-des-externen-rechnungswesens)
   - [Kriterien d. externen Rechnungswesens](#kriterien-d-externen-rechnungswesens)
   - [Wer braucht was](#wer-braucht-was)
@@ -100,19 +105,19 @@ Allgemeine Betriebswirtschaftslehre
   - [Wie ist die Einteilung objektbezogener Investitionen? (3)](#wie-ist-die-einteilung-objektbezogener-investitionen-3)
   - [Wie werden Investitionen hierarchiebezogen eingeteilt?](#wie-werden-investitionen-hierarchiebezogen-eingeteilt)
   - [Wie werden Investitionen umfangsbezogen eingeteilt?](#wie-werden-investitionen-umfangsbezogen-eingeteilt)
-  - [Wie werden Investitionen häufigkeitsbezogen eingeteilt?](#wie-werden-investitionen-h%C3%A4ufigkeitsbezogen-eingeteilt)
+  - [Wie werden Investitionen häufigkeitsbezogen eingeteilt?](#wie-werden-investitionen-häufigkeitsbezogen-eingeteilt)
   - [Wie werden Investitionen wirkungsbezogen eingeteilt?](#wie-werden-investitionen-wirkungsbezogen-eingeteilt)
-  - [Welche Schritte gehören zum Ablauf einer Finanzierung?](#welche-schritte-geh%C3%B6ren-zum-ablauf-einer-finanzierung)
+  - [Welche Schritte gehören zum Ablauf einer Finanzierung?](#welche-schritte-gehören-zum-ablauf-einer-finanzierung)
   - [Nennen Sie die Kriterien (Arten) der Finanzierung!](#nennen-sie-die-kriterien-arten-der-finanzierung)
 - [Protektionswirtschaft](#protektionswirtschaft)
   - [Nennen Sie die Funktionen/Ziele/Zwecke der Protektionswirtschaft (2)](#nennen-sie-die-funktionenzielezwecke-der-protektionswirtschaft-2)
-  - [Welche handelspolitischen Maßnahmen in der Protektionswirtschaft kennen Sie? (2)](#welche-handelspolitischen-ma%C3%9Fnahmen-in-der-protektionswirtschaft-kennen-sie-2)
+  - [Welche handelspolitischen Maßnahmen in der Protektionswirtschaft kennen Sie? (2)](#welche-handelspolitischen-maßnahmen-in-der-protektionswirtschaft-kennen-sie-2)
   - [Personalbedarf](#personalbedarf)
-    - [Was gehört zum qualitativen Personalbedarf?](#was-geh%C3%B6rt-zum-qualitativen-personalbedarf)
-    - [Was gehört zum quantitativen Personalbedarf?](#was-geh%C3%B6rt-zum-quantitativen-personalbedarf)
+    - [Was gehört zum qualitativen Personalbedarf?](#was-gehört-zum-qualitativen-personalbedarf)
+    - [Was gehört zum quantitativen Personalbedarf?](#was-gehört-zum-quantitativen-personalbedarf)
     - [Unter welcher Bedingung muss der Personalbedarf erreichbar sein?](#unter-welcher-bedingung-muss-der-personalbedarf-erreichbar-sein)
   - [Personalbeschaffung](#personalbeschaffung)
-    - [Wofür steht CI?](#wof%C3%BCr-steht-ci)
+    - [Wofür steht CI?](#wofür-steht-ci)
     - [Woraus setzt sich die CI zusammen?](#woraus-setzt-sich-die-ci-zusammen)
     - [Was muss einem Mitarbeiter geboten werden?](#was-muss-einem-mitarbeiter-geboten-werden)
     - [Welche Einflussfaktoren wirken auf die Methode der Personalbeschaffung?](#welche-einflussfaktoren-wirken-auf-die-methode-der-personalbeschaffung)
@@ -121,10 +126,11 @@ Allgemeine Betriebswirtschaftslehre
     - [Nennen Sie Nachteile der internen Personalbeschaffung!](#nennen-sie-nachteile-der-internen-personalbeschaffung)
     - [Welche Instrumente der Freisetzung kennen Sie? (Personalanpassung)](#welche-instrumente-der-freisetzung-kennen-sie-personalanpassung)
 - [Marketing](#marketing)
-  - [Skizzieren Sie das 4 Säulenmodell des Marketings!](#skizzieren-sie-das-4-s%C3%A4ulenmodell-des-marketings)
+  - [Skizzieren Sie das 4 Säulenmodell des Marketings!](#skizzieren-sie-das-4-säulenmodell-des-marketings)
   - [Skizzieren Sie das AIDA Prinzip!](#skizzieren-sie-das-aida-prinzip)
-  - [Unterscheiden Sie die Marktforschung in primäre und sekundäre Forschung!](#unterscheiden-sie-die-marktforschung-in-prim%C3%A4re-und-sekund%C3%A4re-forschung)
+  - [Unterscheiden Sie die Marktforschung in primäre und sekundäre Forschung!](#unterscheiden-sie-die-marktforschung-in-primäre-und-sekundäre-forschung)
   - [Unterscheiden Sie Push- und Pullmarketing!](#unterscheiden-sie-push--und-pullmarketing)
+- [Klausurinformationen](#klausurinformationen)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -134,18 +140,72 @@ Allgemeine Betriebswirtschaftslehre
 
 ## Begriffe
 
-- **Betrieb:** Ort der Leistungserbringung
+- **Betrieb:** Ort der Leistungserbringung (öffentlich)
 - **Unternehmen:** ganzheitliche, rechtliche, finanzielle und wirtschaftliche Einheit des Betriebs
   - spezieller Betriebstyp
   - in einem marktwirtschaftlichen System
   - nach erwerbswirtschaftlichen Prinzip
-  - auf Basis des Privateigentums und wirtschaftlicher Autonomie
+  - auf Basis des Privateigentums und der relativen Autonomie
+  - unterliegen einem **KVP (kontinuierlicher Verbesserungsprozess)**
+    - Unternehmen sind zu einem KVP gezwungen, durch den Markt (Wettbewerb, Kunden) und den Fortschritt (Technik, Technologie)
 
-## grundlegende Merkmale
+### grundlegende Merkmale
 
 Bestimmende Merkmale von Unternehmen in marktwirtschaftlichen Systemen sind das erwerbswirtschaftliche Prinzip, das Prinzip der Autonomie und das Prinzip des Privateigentums.
 Auf Basis dieser Grundlagen kann (und muss) die
 Unternehmensführung ihre Entscheidungen treffen.
+
+### Unternehmen
+
+- Komplexes System von
+  - fest definierten Zielen (kurzfristig, mittelfristig, langfristig)
+  - MA (HR)
+  - Aktivitäten/Prozessen
+  - Ressourcen (Material/Finanzen)
+- Autonome Festlegung von Zielen (Autonomieprinzip)
+- MA bilden soziales System (Abteilungen, Bereiche, Teams)
+  - ausgerichtet auf Leistungserbringung (erwerbswirtschaftliches Prinzip)
+
+#### Merkmale des Unternehmens
+
+- HR (Human Ressources)
+  - MA Fähigkeiten, Wissen und Erfahrung
+- MR (Material Ressources)
+  - Maschinen, Gebäude, Material, Lizenzen
+- FR (Financial Ressources)
+  - Kapital
+
+#### Wirtschaftliches System:
+
+- Umwelt
+  - Kreislaufwirtschaft
+- Markt/Ökonomie
+  - Kaufen/Verkaufen
+- Soziale Beziehungen
+  - Gesellschaft/Rahmenbedingungen
+
+#### Gesellschaftliche Verantwortung:
+
+> 3 Säulen-Theorie
+
+- positive soz. Beziehungen
+- ökonomische Beziehungen
+- Ökologie
+
+$\rightarrow$ Schnittmenge aller 3 Säulen = Nachhaltigkeit 
+
+### Arbeitsmarkt
+
+- **Arbeitgebermarkt:** 
+  - viele Arbeitnehmer -> Arbeitgeber bestimmt die Konditionen
+- **Arbeitnehmermarkt:**
+  - viele Arbeitgeber brauchen Arbeitnehmer -> Arbeitnehmer bestimmen die Konditionen
+
+> Heute nicht mehr klar Trennbar.
+
+- einerseits Fachkräftemangel: Arbeitgeber brauchen Fachkräfte -> Fachkräfte in der bestimmenden Position
+  - Wer Fachkräfte haben will muss etwas dafür tun: z.B. Ausbilden
+- andererseits Ungelernte Kräfte im Überfluss: Arbeitgeber kann auswählen und bestimmen
 
 ### erwerbswirtschaftliches Prinzip
 
@@ -189,14 +249,6 @@ Das Prinzip des Privateigentums beschreibt, dass die Verfügungsrechte an den Pr
 Daher werden sowohl Gewinne als auch Verluste von dem/den Eigentümer/n getragen $\rightarrow$ **unternehmerisches Risiko**
 
 Daraus ergibt sich für die **Unternehmensführung** die Aufgabe, eine einheitliche Führung zu gewährleisten um der Verantwortung gegenüber den Angestellten und auch Aktionären gerecht zu werden.
-
-### (weitere) Merkmale eines Unternehmens
-
-- komplexes System aus Ressourcen (HR, MR, FR)
-  - HR (Human Ressources) = Mitarbeiter mit Fähigkeiten, Fertigkeiten, Wissen und Erfahrungen
-  - MR (Material Ressources) = Maschinen, Gebäude, Material, Lizenzen
-  - FR (Financial Ressources) = Finanzielle Mittel -> Eigen- und Fremdkapital
-- MA bilden **soziales System** (Gruppen, Teams, Abteilungen, ...) -> ausgerichtet auf Leistungserbringung (erwerbswirtschaftliches Prinzip), Austausch mit Unternehmensumwelt (Markt)
 
 ## Wirtschaftliches System - Nachhaltigkeit
 
@@ -259,12 +311,13 @@ Diese werden (nicht komplett) im Folgenden aufgeführt:
 - **Polypol:** viele Anbieter, viele Nachfrager
   - vollständige Konkurrenz, kein Marktteilnehmer allein sondern der Marktmechanismus bestimmt den Preis
   - z.B. Börsenmarkt
+  
 - **Oligopol:**
   - Angebotsoligopol: wenige Anbieter, viele Nachfrager
-    - wenige große Anbieter besitzen großen Markanteil für ein Gut, welches hohe Nachfrage erfährt
+    - wenige große Anbieter besitzen großen Markanteil für ein Gut, welches hohe Nachfrage erfährt $\rightarrow$ hoher Preis
     - kann zu intensivem Wettbewerb zwischen den Anbietern, aber auch zu (illegalen) Preisabsprachen führen
     - Beispiel: Mobilfunkmarkt, Strommarkt
-  - Nachfragepoligopol: viele Anbieter, wenige Nachfrager
+  - Nachfragepoligopol: viele Anbieter, wenige Nachfrager $\rightarrow$ niedriger Preis da Wettbewerb
     - Beispiel Landwirtschaft: viele Getreideproduzenten, nur wenige Mühlen
 - **Monopol:**
   - Angebotsmonopol: nur ein Anbieter für viele Nachfrager
@@ -275,9 +328,12 @@ Diese werden (nicht komplett) im Folgenden aufgeführt:
   - Nachfragemonopol: nur ein Nachfrager für viele Anbieter
     - kommt selten vor, vor allem bei staatlichen Ausschreibungen
 
-## Einflussfaktoren / PESTEL-Analyse
+## äußere Einflussfaktoren / PESTEL-Analyse
 
 Bei der Betrachtung eines Unternehmens ist es unumgänglich, die externen Einflussfaktoren zu betrachten, da ein Unternehmen nicht im "luftleeren Raum" existiert.
+
+
+
 Dazu können die PESTEL-Faktoren einbezogen werden.
 
 Hinweis: PESTEL wurde in der VL nicht explizit erwähnt, macht sich aber gut um sich die Einflusssphären zu merken.
@@ -286,7 +342,7 @@ Hinweis: PESTEL wurde in der VL nicht explizit erwähnt, macht sich aber gut um 
 
 - **P**olitical / politische Faktoren:
   - Stand der Staatorganisation
-    - politische Ordnung des Landes (demokratisch/totalitär)
+    - politische Ordnung des Landes (demokratisch/bürgerlich)
     - Außenpolitik (Export, Einfuhrüberwachung)
     - Stabilität des Systems
 - **E**conomic / ökonomische Faktoren:
@@ -1478,3 +1534,11 @@ Corporate Image
 
 - Push: Entwicklung findet statt, wird auf den Markt geworfen
 - Pull: Entwicklung orientiert sich am Bedürfniss des Marktes
+
+# Klausurinformationen
+
+- 120 Minuten insgesamt
+  - 90 Minuten ABWL
+  - 30 Minuten Projekt- und Qualitätsmanagement
+
+- 120 Punkte

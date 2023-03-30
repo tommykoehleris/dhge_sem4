@@ -166,6 +166,9 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
   - Beseitigung von Mehrdeutigkeiten und Inkonsistenzen zur Vermeidung von Redundanzen und Anomalien
 - Überprüfung der funktionalen Abhängigkeiten von Attributen eines Schemas zum jeweiligen Schlüsselattribut
 
+> Bessere Erklärung der folgenden Normalformen:
+https://www.datenbanken-verstehen.de/datenmodellierung/normalisierung/zweite-normalform/
+
 ### 1. Normalform
 
 - die Werte der Attribute sind atomar (zusammengesetzte/kollektionswertige Attribute sind nicht gestattet)

@@ -20,8 +20,8 @@ Systementwurf
   - [Software-Entwurf](#software-entwurf)
   - [Gliederung des Entwurfsprozesses](#gliederung-des-entwurfsprozesses)
   - [Beispiel](#beispiel)
-  - [Software Architektur](#software-architektur)
   - [Kriterien für einen guten Entwurf](#kriterien-für-einen-guten-entwurf)
+  - [Software Architektur](#software-architektur)
   - [Software-Architekturen und deren Sichten](#software-architekturen-und-deren-sichten)
     - [Szenarien](#szenarien)
     - [Architektur-Muster für strukturelle Sicht](#architektur-muster-für-strukturelle-sicht)
@@ -159,7 +159,7 @@ Entwickeln Sie eine Software-Architektur!
 
 - Service-Techniker : mobiles Gerät oder Web-Aufruf
 - Auftragsschein ausfüllen $\rightarrow$  unterschreiben
-- Ziel: DB Ablage
+- Ziel: Datenbank Ablage
 
 **B**
 
@@ -174,29 +174,6 @@ Entwickeln Sie eine Software-Architektur!
 - Ist die Ausführung korrekt, vollständig und präzise?
 - Gruppierung $\rightarrow$ (Zusammengehörigkeit)
 - ausreichende Trennung?
-
-## Software Architektur
-
-> beschreibt die grundlegende Organisation des Systems
-
-- verkörpert durch seine Komponenten, seine Beziehungen zur Umgebung und seine Komponenten-Beziehungen
-- verwendet werden Diagramme für verschiedene Sichten
-
-beruht auf:
-
-- allgemeinen Entwicklungs-Prinzipien
-- Heuristiken
-- Architektur-Muster ("Kostproben von Möglichkeiten")
-
-$\rightarrow$ Dokumentation wird erzeugt
-
-**Szenarien (Sichten):**
-
-- Strukturelle Sicht $\rightarrow$ Physische Sicht
-- Ablaufsicht
-- Logische Sicht ("Nutzer-Sicht")
-
-> Die Sichten generell nicht mischen! Sichten für die jeweiligen Zielgruppen einzeln erstellen. Es gibt jedoch auch Ausnahmen.
 
 ## Kriterien für einen guten Entwurf
 
@@ -236,6 +213,29 @@ $\rightarrow$ Dokumentation wird erzeugt
   - Hilfsmittel: IDEs warnen, OOP $\rightarrow$ Vererbung, Parametrisierung (Prozedurale Programmierung), Module/Objekte mit allgemeiner Schnittstelle
 
 <!-- markdownlint-enable list-indent -->
+
+## Software Architektur
+
+> beschreibt die grundlegende Organisation des Systems
+
+- verkörpert durch seine Komponenten, seine Beziehungen zur Umgebung und seine Komponenten-Beziehungen
+- verwendet werden Diagramme für verschiedene Sichten
+
+beruht auf:
+
+- allgemeinen Entwicklungs-Prinzipien
+- Heuristiken
+- Architektur-Muster ("Kostproben von Möglichkeiten")
+
+$\rightarrow$ Dokumentation wird erzeugt
+
+**Szenarien (Sichten):**
+
+- Strukturelle Sicht $\rightarrow$ Physische Sicht
+- Ablaufsicht
+- Logische Sicht ("Nutzer-Sicht")
+
+> Die Sichten generell nicht mischen! Sichten für die jeweiligen Zielgruppen einzeln erstellen. Es gibt jedoch auch Ausnahmen.
 
 ## Software-Architekturen und deren Sichten
 

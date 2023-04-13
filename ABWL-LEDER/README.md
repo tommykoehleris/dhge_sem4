@@ -87,6 +87,7 @@ Allgemeine Betriebswirtschaftslehre
     - [REFA](#refa)
     - [Qualitative Personalplanung](#qualitative-personalplanung)
   - [Innerbetriebliche Personalentwicklung](#innerbetriebliche-personalentwicklung)
+  - [Betriebliche Fortbildung](#betriebliche-fortbildung)
     - [Mitarbeitermarketing](#mitarbeitermarketing)
 - [Externes Rechnungswesen](#externes-rechnungswesen)
   - [Nennen Sie Ziele der Kennzahlen im externen Rechnungswesen](#nennen-sie-ziele-der-kennzahlen-im-externen-rechnungswesen)
@@ -890,7 +891,9 @@ Einteilung nach Sektoren (z.B. kaufmännisch oder technisch)
   - fachliche, methodische, persönliche (individuelle/soziale) Kompetenzen
   - Inhalte der Kompetenzen eines Mitarbeiters: Fähigkeiten, Fertigkeiten, Erfahrung, Wissen
   - Fähigkeiten, Erfahrung und Wissen sind lernbar; Fähigkeiten können entwickelt werden
-- quantitativ $\rightarrow$ Recruiting $\rightarrow$ Kosten $\rightarrow$ Anpassung
+- quantitativ $\rightarrow$ Recruiting (Gewinnung von Arbeitskräften) $\rightarrow$ Kosten $\rightarrow$ Anpassung
+  - Beispiel Mitarbeiteranzahl:
+    - ein Mitarbeiter fährt durch halb Europa um 10min bei einem Kunden zu sein $\rightarrow$ uneffizient $\rightarrow$ mehr Mitarbeiter benötigt
 
 ## Personalbedarfsplanung
 
@@ -1078,16 +1081,36 @@ In der Klausur sind alle Werte vorgegeben.
   - **Fortbildung**, Erweiterung der beruflichen Qualifikation mit einem **Abschluss (Prüfung) im gleichen Beruf**
   - **Weiterbildung**, Erweiterung der beruflichen Qualifikationen **ohne Abschluss im gleichen Beruf**
   - **Umschulung**, Erweiterung der beruflichen Qualifikation mit einem **Abschluss (Prüfung) in einem anderen Beruf**
-- innerbetriebliche Förderung
+- innerbetriebliche Förderung (Mentoring)
   - Job-Enrichment
   - Job-Enlargement
   - Job-Rotation
+
+## Betriebliche Fortbildung
+
+- **Aufstieg:**
+  - höhere Verantwortung
+  - höheres Einkommen
+  - Beispiel: Ausbildung/Weiterbildung um eine Führungsposition zu übernehmen
+- **Anpassung:**
+  - Anpassung der Qualifikation
+  - Veränderung des Arbeitsplatzes
+  - Beispiel: Unternehmen hat eine neue Programmiersprache eingeführt und diese muss erlernt werden
+- **Erweiterung:**
+  - Zusätzliche Qualifikation
+  - Ohne Karriere
+  - Beispiel: Fortbildung zu einer neuen Programmiersprache
+- **Erhaltung:**
+  - Auffrischung Kenntnisse
+  - Trainings
+  - Beispiel: Training/Weiterbildung der Mitarbeiter
+
 
 ### Mitarbeitermarketing
 
 | Kommunikationspolitik | Distributionspolitik       | Preispolitik                     | Produktpolitik            |
 | --------------------- | -------------------------- | -------------------------------- | ------------------------- |
-| Stellenausschreibung  | Verteilung auf die Stellen | Lohne (Leistungen)/Gehalt (Zeit) | Kompetenz der Mitarbeiter |
+| Stellenausschreibung  | Verteilung auf die Stellen/Einsatzorte | Lohne (Leistungen)/Gehalt (Zeit) | Kompetenz der Mitarbeiter |
 |                       | Einsatz                    | Entgelt                          |                           |
 
 # Externes Rechnungswesen
